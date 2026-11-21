@@ -295,6 +295,10 @@ footer b { color: var(--ink); font-weight: 500; }
 /* Управленческая презентация: дополнительный слой поверх исходной концепции */
 .mgmt { background: #F7F3EF; }
 .mgmt-dark { background: var(--wine); color: #F6EEEC; }
+/* Контраст заголовков на винном фоне и внутри светлых карточек */
+.mgmt-dark h1, .mgmt-dark h2, .mgmt-dark h3 { color: #FFF9F6; }
+.mgmt-dark h1 em, .mgmt-dark h2 em, .mgmt-dark h3 em { color: #F0C9D0; }
+.mgmt-dark .comp-card h3, .mgmt-dark .mgmt-card h3, .mgmt-dark .kpi h3 { color: var(--wine); }
 .mgmt-dark .label { color: #D9BFC3; }
 .mgmt-dark .label::before { color: var(--blush); }
 .mgmt-dark .muted { color: #E8D9D9; }

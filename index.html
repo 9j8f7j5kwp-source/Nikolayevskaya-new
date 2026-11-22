@@ -6,6 +6,14 @@
 <title>Кафе «Николаевская»</title>
 <meta name="description" content="Кафе «Николаевская» на Ленинградском вокзале: ресторанное блюдо за 3–5 минут по цене бизнес-ланча, здесь или с собой. Русская и северная кухня, коробки в поезд, предзаказ к поезду.">
 <meta name="theme-color" content="#F3EFEB">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV7E0QLEBR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GV7E0QLEBR');
+</script>
 <meta property="og:title" content="Кафе «Николаевская» на Ленинградском вокзале">
 <meta property="og:description" content="Ресторанное блюдо за 3–5 минут по цене бизнес-ланча. Здесь или с собой.">
 <meta property="og:image" content="bar.webp">
@@ -988,5 +996,77 @@ footer b { color: var(--ink); font-weight: 500; }
     </div>
   </div>
 </footer>
+<script>
+(function () {
+  function track_site_interaction(eventName, params) {
+    if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
+  }
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a');
+    if (!link) return;
+
+    var href = link.getAttribute('href') || '';
+    var label = (link.innerText || link.getAttribute('aria-label') || '').trim().slice(0, 100);
+    var section = href.charAt(0) === '#' ? href.slice(1) : '';
+
+    if (link.classList.contains('top-cta') || link.classList.contains('btn')) {
+      track_site_interaction('click_cta', {
+        cta_text: label,
+        destination: href,
+        page_location: location.pathname
+      });
+    }
+
+    if (section === 'menu' || section === 'poezd' || section === 'packaging' ||
+        section === 'interier' || section === 'competition' ||
+        section === 'due-diligence' || section === 'economics' ||
+        section === 'decision' || section === 'adres') {
+      track_site_interaction('navigation_click', {
+        link_text: label,
+        destination_section: section
+      });
+    }
+
+    if (link.closest('.menu-nav') || /^#(zavtraki|supy|goryachee|kompleks|salaty|vypechka|deserty|napitki)$/.test(href)) {
+      track_site_interaction('click_menu_category', {
+        category: label,
+        destination: href
+      });
+    }
+
+    if (section === 'economics' || section === 'decision' || link.classList.contains('top-cta')) {
+      track_site_interaction('click_management', {
+        link_text: label,
+        destination: href
+      });
+    }
+
+    if (/^https?:\/\//i.test(href) && new URL(href, location.href).hostname !== location.hostname) {
+      track_site_interaction('outbound_click', {
+        link_url: href,
+        link_text: label
+      });
+    }
+  });
+
+  if ('IntersectionObserver' in window) {
+    var seen = {};
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        if (!id || seen[id]) return;
+        seen[id] = true;
+        track_site_interaction('view_section', { section_id: id });
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.35 });
+    document.querySelectorAll('main section[id]').forEach(function (section) {
+      observer.observe(section);
+    });
+  }
+})();
+</script>
 </body>
 </html>

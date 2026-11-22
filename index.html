@@ -20,16 +20,22 @@
   window.gtag = gtag;
   window.NikolaevskayaAnalytics = {
     initialized: false,
+    active: false,
     enable: function () {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      this.active = true;
       if (this.initialized) return;
       this.initialized = true;
-      gtag('consent', 'update', { analytics_storage: 'granted' });
       gtag('js', new Date());
       gtag('config', 'G-GV7E0QLEBR');
       var script = document.createElement('script');
       script.async = true;
       script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GV7E0QLEBR';
       document.head.appendChild(script);
+    },
+    disable: function () {
+      this.active = false;
+      gtag('consent', 'update', { analytics_storage: 'denied' });
     }
   };
   try {
@@ -1059,7 +1065,7 @@ footer b { color: var(--ink); font-weight: 500; }
 <script>
 (function () {
   function track_site_interaction(eventName, params) {
-    if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
+    if (window.NikolaevskayaAnalytics && window.NikolaevskayaAnalytics.active && typeof window.gtag === 'function') window.gtag('event', eventName, params);
   }
 
   document.addEventListener('click', function (event) {
@@ -1147,8 +1153,9 @@ footer b { color: var(--ink); font-weight: 500; }
   }
   function saveChoice(value) {
     try { localStorage.setItem(key, value); } catch (e) {}
-    if (value === 'accepted' && window.NikolaevskayaAnalytics) {
-      window.NikolaevskayaAnalytics.enable();
+    if (window.NikolaevskayaAnalytics) {
+      if (value === 'accepted') window.NikolaevskayaAnalytics.enable();
+      else window.NikolaevskayaAnalytics.disable();
     }
     if (banner) banner.classList.remove('is-visible');
   }

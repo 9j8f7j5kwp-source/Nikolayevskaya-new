@@ -6,13 +6,37 @@
 <title>Кафе «Николаевская»</title>
 <meta name="description" content="Кафе «Николаевская» на Ленинградском вокзале: ресторанное блюдо за 3–5 минут по цене бизнес-ланча, здесь или с собой. Русская и северная кухня, коробки в поезд, предзаказ к поезду.">
 <meta name="theme-color" content="#F3EFEB">
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GV7E0QLEBR"></script>
+<!-- Google Analytics 4: загрузка только после согласия на аналитические cookies -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-GV7E0QLEBR');
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    wait_for_update: 500
+  });
+  window.gtag = gtag;
+  window.NikolaevskayaAnalytics = {
+    initialized: false,
+    enable: function () {
+      if (this.initialized) return;
+      this.initialized = true;
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+      gtag('js', new Date());
+      gtag('config', 'G-GV7E0QLEBR');
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GV7E0QLEBR';
+      document.head.appendChild(script);
+    }
+  };
+  try {
+    if (localStorage.getItem('nikolaevskaya_analytics_consent') === 'accepted') {
+      window.NikolaevskayaAnalytics.enable();
+    }
+  } catch (e) {}
 </script>
 <meta property="og:title" content="Кафе «Николаевская» на Ленинградском вокзале">
 <meta property="og:description" content="Ресторанное блюдо за 3–5 минут по цене бизнес-ланча. Здесь или с собой.">
@@ -94,6 +118,22 @@ p { margin: 0; }
 .drape { height: 64px; --s: 12px;
   background: repeating-linear-gradient(90deg, #E2DAD5 0 6px, #F7F3F0 13px, #EDE6E1 19px, #D6CCC6 26px, #E2DAD5 32px); }
 
+/* Согласие на аналитику и политика конфиденциальности */
+.cookie-banner { position: fixed; z-index: 50; left: 20px; right: 20px; bottom: 20px; max-width: 760px; margin-left: auto; padding: 22px; background: #fff; color: var(--ink); border: 1px solid var(--plaster); box-shadow: 0 12px 40px #1e171833; display: none; }
+.cookie-banner.is-visible { display: block; }
+.cookie-banner h2 { font-size: 27px; margin: 0 0 8px; }
+.cookie-banner p { font-size: 14px; line-height: 1.5; margin: 0 0 14px; }
+.cookie-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.cookie-actions button, .cookie-settings { border: 1px solid var(--wine); padding: 10px 16px; background: var(--wine); color: white; font: 500 14px var(--body); cursor: pointer; }
+.cookie-actions button.secondary { background: white; color: var(--wine); }
+.cookie-policy { padding: 70px 0; background: #fff; }
+.cookie-policy h2 { font-size: clamp(30px, 4vw, 46px); margin-bottom: 22px; }
+.cookie-policy h3 { font: 600 18px/1.3 var(--body); margin: 22px 0 8px; }
+.cookie-policy p, .cookie-policy li { max-width: 78ch; font-size: 15px; line-height: 1.65; margin-bottom: 10px; }
+.cookie-policy ul { padding-left: 22px; }
+.cookie-policy .policy-note { padding: 16px; border-left: 3px solid var(--wine); background: var(--paper); }
+.cookie-settings { margin-top: 12px; background: transparent; color: var(--wine); }
+@media (max-width: 600px) { .cookie-banner { left: 10px; right: 10px; bottom: 10px; padding: 16px; } .cookie-actions button { flex: 1 1 auto; } }
 /* Шапка */
 .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid #0000; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 64px; }
@@ -992,10 +1032,30 @@ footer b { color: var(--ink); font-weight: 500; }
     <img src="lily-note.png" width="552" height="590" alt="Рисунок ландыша с подписью «En mai, fais ce qui me plaît»">
     <div>
       <p><b>«Николаевская»</b> — концепт-сайт инвестиционного проекта кафе на Ленинградском вокзале. Цены и детали — план на 2027 год, они могут измениться.</p>
-      <p>Интерьер, рисунки и материалы: проект POETICA, автор Адриана Варелджян, HSE Design. Эпиграф: А. С. Пушкин.</p><p>Управленческие показатели основаны на инвестиционной модели от 20.11.2026 и являются плановыми. Финансовые сценарии, трафик, аренда, сроки и налоговые допущения требуют подтверждения перед инвестиционным решением. Дизайн и изображения POETICA используются в концепте; публичное коммерческое использование требует разрешения правообладателя.</p>
+      <p>Интерьер, рисунки и материалы: проект POETICA, автор Адриана Варелджян, HSE Design. Эпиграф: А. С. Пушкин.</p><p><a href="#privacy">Политика конфиденциальности</a></p><button type="button" class="cookie-settings" id="cookie-settings">Настройки cookies</button><p>Управленческие показатели основаны на инвестиционной модели от 20.11.2026 и являются плановыми. Финансовые сценарии, трафик, аренда, сроки и налоговые допущения требуют подтверждения перед инвестиционным решением. Дизайн и изображения POETICA используются в концепте; публичное коммерческое использование требует разрешения правообладателя.</p>
     </div>
   </div>
 </footer>
+
+  <section class="cookie-policy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <p class="label">данные и конфиденциальность</p>
+      <h2 id="privacy-title">Политика конфиденциальности и cookies</h2>
+      <p><b>Сайт «Николаевская»</b> — информационный сайт инвестиционного проекта кафе. На сайте подключена Google Analytics 4 с идентификатором измерения G-GV7E0QLEBR. Аналитика включается только после того, как посетитель нажмёт «Разрешить аналитику».</p>
+      <h3>Какие данные собираются</h3>
+      <p>При согласии на аналитику Google Analytics может собирать технические сведения о посещении: просмотренные страницы и разделы, действия с кнопками и ссылками, источник перехода, тип устройства и браузера, приблизительные сведения о местоположении, а также сетевые идентификаторы, используемые сервисом для работы аналитики. Мы не настраивали передачу в Google Analytics имени, телефона, электронной почты или иных полей прямой идентификации.</p>
+      <h3>Для чего используются данные</h3>
+      <p>Данные используются для оценки посещаемости, интереса к меню, упаковке для поездов и разделам проекта, а также для улучшения структуры и содержания сайта. Аналитические cookies не обязательны для просмотра сайта.</p>
+      <h3>Кто обрабатывает данные</h3>
+      <p>Техническую обработку аналитических данных осуществляет Google Analytics (Google LLC и связанные с ней компании) в соответствии с условиями и политикой конфиденциальности Google. В зависимости от настроек сервиса и применимого законодательства обработка может включать передачу данных за пределы страны посетителя. Подробнее: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Политика конфиденциальности Google</a> и <a href="https://support.google.com/analytics/answer/6004245" target="_blank" rel="noopener">сведения о Google Analytics</a>.</p>
+      <h3>Согласие и отказ</h3>
+      <p>До получения согласия аналитический тег не загружается. Вы можете разрешить или отклонить аналитические cookies. Отказ не ограничивает доступ к содержанию сайта. Изменить решение можно в любой момент с помощью кнопки «Настройки cookies» внизу страницы; при отзыве согласия аналитика отключается для последующих действий и посещений.</p>
+      <h3>Срок хранения и контакты</h3>
+      <p>Выбор посетителя хранится в браузере в локальном хранилище до изменения решения или очистки данных браузера. Сроки хранения аналитических данных в Google Analytics задаются в настройках ресурса GA4. Для вопросов о сайте и обработке данных: <b>[укажите наименование оператора и контактный e-mail]</b>.</p>
+      <p class="policy-note"><b>Важно перед публичным запуском:</b> заполните наименование и реквизиты оператора, контакт для обращений, проверьте применимые требования законодательства о персональных данных и трансграничной передаче, а также настройки срока хранения в GA4. Этот текст — техническая основа уведомления, а не юридическое заключение.</p>
+    </div>
+  </section>
+
 <script>
 (function () {
   function track_site_interaction(eventName, params) {
@@ -1066,6 +1126,39 @@ footer b { color: var(--ink); font-weight: 500; }
       observer.observe(section);
     });
   }
+})();
+</script>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-title" aria-describedby="cookie-description">
+  <h2 id="cookie-title">Настройки cookies</h2>
+  <p id="cookie-description">Мы используем Google Analytics, чтобы понимать, какие разделы сайта полезны посетителям. Аналитика необязательна и включится только с вашего разрешения. <a href="#privacy">Подробнее — политика конфиденциальности</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" id="cookie-accept">Разрешить аналитику</button>
+    <button type="button" class="secondary" id="cookie-reject">Отклонить</button>
+  </div>
+</div>
+<script>
+(function () {
+  var key = 'nikolaevskaya_analytics_consent';
+  var banner = document.getElementById('cookie-banner');
+  var accept = document.getElementById('cookie-accept');
+  var reject = document.getElementById('cookie-reject');
+  function getChoice() {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+  function saveChoice(value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+    if (value === 'accepted' && window.NikolaevskayaAnalytics) {
+      window.NikolaevskayaAnalytics.enable();
+    }
+    if (banner) banner.classList.remove('is-visible');
+  }
+  if (banner && !getChoice()) banner.classList.add('is-visible');
+  if (accept) accept.addEventListener('click', function () { saveChoice('accepted'); });
+  if (reject) reject.addEventListener('click', function () { saveChoice('rejected'); });
+  var settings = document.getElementById('cookie-settings');
+  if (settings) settings.addEventListener('click', function () {
+    if (banner) banner.classList.add('is-visible');
+  });
 })();
 </script>
 </body>

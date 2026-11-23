@@ -1,0 +1,322 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Николаевская — техническое досье проекта</title>
+<meta name="description" content="Техническое досье предварительной инвестиционной концепции «Николаевская»: модель кафе, проверка предпосылок, финансы, персонал, риски и этапы принятия решения.">
+<style>
+:root{--wine:#542b38;--dark:#2e2428;--muted:#756b6e;--paper:#f8f6f3;--line:#ded6cf;--rose:#e9d8d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--dark);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+header{background:white;border-bottom:1px solid var(--line);padding:16px max(24px,calc((100vw - 1060px)/2));display:flex;justify-content:space-between;align-items:center;gap:16px}a{color:var(--wine)}header a{font-size:14px;text-decoration:none}.logo{font:28px Georgia,serif;color:var(--wine)}main{max-width:1100px;margin:auto;padding:0 24px}section{padding:50px 0;border-bottom:1px solid var(--line)}.cover{min-height:590px;display:flex;align-items:center;border-bottom:4px solid var(--wine);background:linear-gradient(140deg,#fff 20%,#f0e4dd 100%);margin:0 -24px;padding:68px 60px}.cover h1{font:normal clamp(45px,6vw,76px)/1.05 Georgia,serif;color:var(--wine);max-width:850px;margin:18px 0}.cover .overline,.label{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:#8f5c64;font-weight:700}.cover p{font-size:19px;max-width:700px}.cover .rule{height:4px;width:86px;background:var(--wine);margin:34px 0}.cover .meta{font-size:13px;color:var(--muted)}h2{font:normal clamp(30px,4vw,43px)/1.15 Georgia,serif;color:var(--wine);margin:8px 0 18px}h3{font-size:20px;margin:24px 0 9px;color:var(--wine)}h4{font-size:16px}.lead{font-size:18px;line-height:1.55;max-width:890px}.muted,.fin-foot,.chart-sub,small{color:var(--muted)}p{max-width:1000px}ul,ol{padding-left:23px}li{margin-bottom:8px}b,strong{font-weight:680}em{font-style:normal;color:#9d5f73}.mgmt-grid,.scenario-grid,.station-facts,.kpi-bar,.segment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:25px 0}.mgmt-card,.scenario,.station-fact,.kpi,.segment,.phase,.brief-card{background:#fff;border:1px solid var(--line);padding:18px;break-inside:avoid}.num,.big{font:normal 32px Georgia,serif;color:var(--wine);display:block}.mgmt-card b,.mgmt-card small{display:block}.mgmt-columns,.decision-box{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:24px 0}.mgmt-note,.fin-method,.policy-note{padding:19px 22px;border-left:4px solid var(--wine);background:#f1e8e2;margin:20px 0}.status{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:7px 10px;background:var(--wine);color:#fff}.timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.phase small,.phase b,.phase p{display:block}.phase small{letter-spacing:.1em}.format-scroll{width:100%;overflow:auto;margin:23px 0}table{width:100%;border-collapse:collapse;margin:15px 0;font-size:13px;line-height:1.45;min-width:680px}th,td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top;text-align:left}th{background:#f0e9e4;color:var(--wine)}thead th{background:var(--wine);color:white}.flowline,.fin-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.flowstep,.fin-chart{background:#fff;border:1px solid var(--line);padding:14px}.flowstep b,.flowstep span{display:block}.cost-stack,.bar-chart{display:none}.cost-legend span{display:block;margin:5px 0}.brief-banner,.brief-grid{background:#f0e8e2}.brief-actions a{margin-right:12px}.decision-list{padding-left:20px}.index{font-size:13px;color:var(--wine);margin-right:8px}.site-only{display:none}footer{max-width:1100px;margin:auto;padding:36px 24px;font-size:12px;color:var(--muted)}.printbutton{border:0;background:var(--wine);color:white;padding:12px 18px;cursor:pointer}
+@page{size:A4;margin:17mm 16mm}@media print{html{scroll-behavior:auto}body{font:10pt/1.37 Georgia,"Times New Roman",serif;background:#fff;color:#222}header,.printbutton{display:none}main{max-width:none;padding:0}.cover{margin:0;padding:20mm 8mm;min-height:248mm;page-break-after:always}.cover h1{font-size:43pt}section{padding:8mm 0;border-bottom:none;break-before:page}section:first-of-type{break-before:auto}h2{font-size:25pt}h3{font-size:13pt}.label{font-size:8pt}.lead{font-size:11pt}.mgmt-grid,.scenario-grid,.station-facts,.kpi-bar,.segment-grid{grid-template-columns:1fr 1fr}.mgmt-card,.scenario,.station-fact,.kpi,.segment,.phase{padding:9px}.mgmt-columns,.decision-box{gap:10mm}table{font-size:8pt;min-width:0;break-inside:auto}tr{break-inside:avoid}th,td{padding:5px}a{color:#333;text-decoration:none}.format-scroll{overflow:visible}.mgmt-note{padding:10px}.timeline{grid-template-columns:1fr 1fr}p,li{orphans:3;widows:3}footer{display:none}}
+@media(max-width:720px){header{padding:12px 16px}main{padding:0 16px}.cover{padding:65px 24px;min-height:420px;margin:0 -16px}.mgmt-grid,.scenario-grid,.mgmt-columns,.decision-box,.timeline,.station-facts,.kpi-bar{grid-template-columns:1fr}.flowline,.fin-charts{grid-template-columns:1fr}.cover h1{font-size:45px}}
+</style></head><body><header><a class="logo" href="./">Николаевская</a><div><a href="./">Вернуться на сайт</a> &nbsp; <button class="printbutton" onclick="window.print()">Печать / сохранить PDF</button></div></header><main>
+<div class="cover"><div><div class="overline">Предварительная инвестиционная инициатива · для внутреннего рассмотрения</div><h1>Николаевская<br>Техническое досье</h1><div class="rule"></div><p>Концепция кафе на Ленинградском вокзале: продукт, операционная модель, альтернативы, финансовые предпосылки и перечень необходимых проверок.</p><p class="meta">Редакция 23 ноября 2026 года · НЕ инвестиционное предложение и не утверждённый бизнес-план</p></div></div>
+<section id="document-guide"><p class="label">Как читать документ</p><h2>Решение сегодня — о проверке гипотез</h2><p class="lead">Досье представляет исходные материалы для изучения инициативы. Указанные площади, цены, поток, штат, сроки и сценарии не являются подтверждёнными условиями. Рентабельность, NPV и IRR не публикуются до пересчёта на ОСНО.</p><div class="mgmt-grid"><article class="mgmt-card"><span class="num">34</span><b>Сотрудника</b><small>Предварительная штатная модель, требует сменного расчёта</small></article><article class="mgmt-card"><span class="num">5 млн ₽</span><b>Целевой предел полной стоимости персонала в месяц</b><small>Не доказан фактическим графиком</small></article><article class="mgmt-card"><span class="num">180 / 90 м²</span><b>Альтернативные форматы</b><small>Объект аренды ещё не выбран</small></article><article class="mgmt-card"><span class="num">ОСНО</span><b>Система налогообложения</b><small>Проверить применимость освобождения по НДС</small></article></div></section><section id="contents"><p class="label">Навигация</p><h2>Содержание досье</h2><ol><li><a href="#project">Продуктовая гипотеза</a></li><li><a href="#evidence">Отделяем факты от гипотез</a></li><li><a href="#location-case">Вокзал как точка притяжения</a></li><li><a href="#competition">На вокзале уже есть гастрономический выбор</a></li><li><a href="#due-diligence">Сначала подтверждаем условия площадки</a></li><li><a href="#operations">Скорость — результат технологии, а не компромисс качества</a></li><li><a href="#formats">Не один сценарий. Три варианта действий.</a></li><li><a href="#unit-test">Что меняет поток и средний чек</a></li><li><a href="#economics">Экономика ещё не подтверждена</a></li><li><a href="#financial-detail">Что предстоит доказать цифрами</a></li><li><a href="#staff-audit">Справятся ли 34 сотрудника?</a></li><li><a href="#risks">Сначала проверяем. Потом инвестируем.</a></li><li><a href="#roadmap">Сначала проверка. Потом проектирование и инвестиции.</a></li><li><a href="#evidence-plan">Что руководство получит после проработки</a></li><li><a href="#family">Маленький подарок. Большая память о путешествии.</a></li><li><a href="#growth">От ресторана — к гастрономии путешествий</a></li><li><a href="#decision">Разрешить проработку. Не утверждать инвестиции.</a></li></ol></section><section class="block mgmt" id="project" aria-labelledby="project-h">
+    <div class="wrap">
+      <p class="label">проект для руководства</p>
+      <div class="mgmt-intro">
+        <div>
+          <h2 id="project-h">Не просто кафе.<br><em>Новая гастрономия вокзала.</em></h2>
+        </div>
+        <p class="lead">«Николаевская» соединяет ресторанное качество, короткое время выдачи и удобство путешествия. Гость выбирает один из трёх сценариев: поесть в зале, взять блюдо с собой или забрать заранее собранный заказ к отправлению поезда.</p>
+      </div>
+      <div class="mgmt-grid">
+        <article class="mgmt-card"><span class="num">180 м²</span><b>Планируемая площадь</b><small>Формат кафе с собственным залом</small></article>
+        <article class="mgmt-card"><span class="num">56</span><b>Посадочных мест</b><small>Обслуживание в зале и быстрый оборот</small></article>
+        <article class="mgmt-card"><span class="num">34</span><b>Сотрудника в штатной модели</b><small>Сменный график, кухня и выдача</small></article>
+        <article class="mgmt-card"><span class="num">3</span><b>Канала продаж</b><small>Зал · навынос · предзаказ к поезду</small></article>
+      </div>
+      <div class="mgmt-columns">
+        <div>
+          <h3>В чём отличие</h3>
+          <ul class="mgmt-list">
+            <li><span class="index">01</span><span><b>Ресторанный продукт без долгого ожидания.</b><br>Длительные процессы выполняются заранее; на выдаче — доводка и сборка.</span></li>
+            <li><span class="index">02</span><span><b>Одно меню для зала и дороги.</b><br>Блюдо подаётся на фарфоре или в продуманной упаковке.</span></li>
+            <li><span class="index">03</span><span><b>Вокзальный сценарий заказа.</b><br>Предзаказ привязан к номеру поезда и времени отправления.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Продуктовая идея</h3>
+          <p class="lead" style="font-size:18px">Русская и северная кухня в современной ресторанной интерпретации: фермерская говядина и птица, северная рыба, белые грибы, ягоды, хлеб партнёрской пекарни и морсы.</p>
+          <p class="mgmt-note">Короткое меню и предварительная подготовка — основа скорости. Финальный ассортимент, рецептуры и цены утверждаются после дегустаций, технологических прогонов и проверки калькуляций.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="block" id="evidence" aria-labelledby="evidence-h"><div class="wrap"><p class="label">статус предпосылок</p><h2 id="evidence-h">Отделяем <em>факты от гипотез</em></h2>
+<table class="evidence-table"><thead><tr><th>Подтверждено в рамках инициативы</th><th>Рабочие гипотезы</th><th>Нужно проверить после одобрения</th></tr></thead>
+<tbody><tr><td>Идея нового направления внутри действующей компании общепита; компания применяет ОСНО.</td><td>Формат русской и северной кухни; 3–5 минут на выдаче; еда в поезд.</td><td>Технологические испытания, техкарты, безопасность и производительность.</td></tr>
+<tr><td>Есть концепт-сайт, материалы визуальной концепции и предварительная калькуляция меню.</td><td>180 м², 56 посадочных мест, 34 сотрудника, средний чек около 750 ₽.</td><td>Площадка, инженерия, посменная работа, ФОТ, спрос и цены.</td></tr>
+<tr><td>Исследован круг публичных конкурентных предложений.</td><td>Потенциал продаж в выбранной зоне вокзала и дополнительных каналов.</td><td>Пассажирский поток у конкретного блока, конверсия, аренда, договоры.</td></tr>
+<tr><td>Руководству предлагается принять решение только о проработке.</td><td>Потенциал семейного сервиса и B2B-питания в «Сапсанах» / ВСМ.</td><td>Партнёры, право на производство, пилоты, экономика и требования перевозчика.</td></tr></tbody></table>
+<p class="mgmt-note"><b>Важно:</b> конкретное помещение не выбрано; официальные обращения к оператору вокзала и перевозчикам не направлялись; участие РЖД не согласовано. Визуальные материалы POETICA — референс, а не готовый к реализации архитектурный проект; права на использование должны быть проверены.</p></div></section>
+<section class="block mgmt-dark" id="location-case" aria-labelledby="location-case-h">
+    <div class="wrap">
+      <p class="label">локация и спрос</p>
+      <h2 id="location-case-h">Вокзал как <em>точка притяжения</em></h2>
+      <p class="lead muted">Проект рассчитан на пассажиров дальнего следования и пригородного сообщения, посетителей залов ожидания, сотрудников вокзального комплекса и офисов поблизости.</p>
+      <div class="station-facts">
+        <div class="station-fact"><strong>≈36 тыс.</strong><span>пассажиров дальнего следования в сутки — оценка, приведённая в инвестпроекте</span></div>
+        <div class="station-fact"><strong>≈30 тыс.</strong><span>пригородных пассажиров в сутки — оценка, приведённая в инвестпроекте</span></div>
+        <div class="station-fact"><strong>≈1,1%</strong><span>доля от совокупного потока, соответствующая 750 чекам в день по расчёту проекта</span></div>
+      </div>
+      <div style="margin-top:42px">
+        <h3>Конкурентное окружение: логика позиционирования</h3>
+        <div class="mgmt-grid" style="grid-template-columns:repeat(3,1fr)">
+          <article class="mgmt-card"><b>Кофейни и выпечка</b><small>Сильны в напитках и быстрых покупках. Полноценный рацион и готовая коробка в поезд — не основной сценарий категории.</small></article>
+          <article class="mgmt-card"><b>Фастфуд и фудкорт</b><small>Сильны в скорости и привычных форматах. Отличие «Николаевской» — русская и северная кухня, фарфор и единый формат блюда в зал или дорогу.</small></article>
+          <article class="mgmt-card"><b>«Николаевская»</b><small>Заявляемая ниша — ресторанное блюдо за 3–5 минут, полноценная упаковка и предзаказ к отправлению.</small></article>
+        </div>
+        <p class="fin-foot">Это сравнение форматов, а не аудит конкретных заведений. Перед защитой проекта необходимо добавить названия конкурентов, фактические цены, фотографии, расположение и замеры очередей.</p>
+      </div>
+      <div class="mgmt-columns">
+        <div>
+          <h3>Сегменты спроса</h3>
+          <p class="muted">Пять аудиторий и разные поводы для покупки — от завтрака до полноценного питания в поезде.</p>
+        </div>
+        <div>
+          <h3>Что нужно подтвердить до аренды</h3>
+          <ul class="mgmt-list">
+            <li><span class="index">01</span><span>Фактический поток непосредственно у выбранного блока по часам и дням недели.</span></li>
+            <li><span class="index">02</span><span>Видимость точки, маршрут пассажира, очереди и конкурирующие предложения.</span></li>
+            <li><span class="index">03</span><span>Технические условия помещения, мощность, вентиляция и допустимый формат кухни.</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="fin-foot">Источник исходных ориентиров: инвестиционный проект «Кафе ресторанного уровня с быстрой подачей на Ленинградском вокзале», версия от 20.11.2026. Данные о потоке и конверсии требуют подтверждения оператором и полевыми замерами; конкретный блок пока не зафиксирован.</p>
+    </div>
+  </section>
+<section class="block mgmt-dark" id="competition" aria-labelledby="competition-h">
+    <div class="wrap">
+      <p class="label">конкурентная среда · внешний срез</p>
+      <h2 id="competition-h">На вокзале уже есть <em>гастрономический выбор</em></h2>
+      <p class="lead muted">Ниже — публичный срез заведений и цен, описанный Т—Ж 3 июня 2026 года. В него включены точки первого и цокольного этажей. Это датированный обзор, а не проверка фактического состава арендаторов и цен на 21 ноября 2026 года.</p>
+      <div class="comp-grid">
+        <article class="comp-card"><span class="comp-type">Кофейня · выпечка · сэндвичи</span><h3>Drinkit</h3><p>Капучино 350 мл — 285 ₽; панини с цыплёнком — 295 ₽; гриль-маффин — 325 ₽. Сильный сценарий — кофе и быстрый перекус.</p><div class="comp-price">580 ₽ · капучино + панини</div></article>
+        <article class="comp-card"><span class="comp-type">Азиатское кафе · напитки и десерт</span><h3>Bao Mochi</h3><p>Моти — 350 ₽; матча-латте — 330 ₽; бабл-ти — 590 ₽. Отличается азиатской специализацией и напитками.</p><div class="comp-price">680 ₽ · матча + моти</div></article>
+        <article class="comp-card"><span class="comp-type">Кофейня · быстрый перекус</span><h3>Surf Coffee</h3><p>В обзоре Т—Ж приведены две корзины: капучино и куриный сэндвич-ролл — 670 ₽; айс-латте и сэндвич в сводной таблице — 835 ₽. Конкурирует за быстрый перекус.</p><div class="comp-price">670–835 ₽ · примеры корзин</div></article>
+        <article class="comp-card"><span class="comp-type">Полноценное питание · без сахара</span><h3>«Забыли сахар»</h3><p>В обзоре Т—Ж представлен полноценный набор: стейк из индейки, пюре и морс. Конкурирует за гостя, который хочет поесть основательно.</p><div class="comp-price">1 450 ₽ · обед из трёх позиций</div></article>
+        <article class="comp-card"><span class="comp-type">Кофе · бюджетный перекус · цоколь</span><h3>«Алёнка»</h3><p>В обзоре Т—Ж от 3 июня 2026 года на цокольном этаже указаны латте и капучино по 99–159 ₽. Конкурирует за наиболее чувствительный к цене утренний и транзитный спрос.</p><div class="comp-price">99–159 ₽ · кофе</div></article>
+        <article class="comp-card"><span class="comp-type">Кофейня · сэндвичи · цоколь</span><h3>Cofix</h3><p>В том же обзоре указаны десерты по 100–200 ₽ и сэндвичи около 300 ₽. Это ценовой ориентир нижнего сегмента, а не прямой аналог ресторанного меню.</p><div class="comp-price">≈300 ₽ · сэндвич</div></article>
+      </div>
+      <div class="market-gap">
+        <article><h3>Рыночный ориентир по аренде</h3><p>В публикации от 16 июня 2026 года эксперт оценивал стартовые ставки коммерческих площадей вокзала от 65 тыс. ₽/м² в год без НДС. Это публичный ориентир, не коммерческое предложение. В базовой модели проекта заложено 75 тыс. ₽/м², в целевом сценарии — 50 тыс. ₽/м² и 7% оборота.</p></article>
+        <article><h3>Будущая конкуренция</h3><p>Агентство «Москва» сообщало о потенциальном гастропространстве рядом с вокзалом на 10–15 концепций; завершение работ по зданию Московского железнодорожного агентства ожидалось в 2028 году. Это будущий риск, а не действующий конкурент.</p></article>
+      </div>
+      <div class="comp-warning">Позиционирование «Николаевской» не должно строиться на утверждении, что на вокзале нет полноценной еды. Конкуренты уже закрывают кофе, выпечку, азиатский перекус и отдельные полноценные обеды. Возможная дифференциация проекта — русская и северная кухня, единое блюдо в зале и в дороге, фарфор, заранее подготовленная кухня и целевое время выдачи 3–5 минут. Это преимущество ещё предстоит подтвердить пилотом.</div>
+      <div class="comp-sources"><a href="https://t-j.ru/leningradsky-check/" target="_blank" rel="noopener">Т—Ж · обзор заведений и цен, 03.06.2026 ↗</a><a href="https://t-j.ru/leningradskiy-is-back/" target="_blank" rel="noopener">Т—Ж · открытие вокзала и точки на цокольном этаже ↗</a><a href="https://finance.mail.ru/article/kievskaya-ploshad-stala-operatorom-ploshadej-na-leningradskom-vokzale-69213267/" target="_blank" rel="noopener">Финансы Mail · оператор и ставки, 16.06.2026 ↗</a><a href="https://www.mskagency.ru/materials/3565096" target="_blank" rel="noopener">Агентство «Москва» · будущий фудхолл ↗</a><a href="https://xn--80aaac2aiu7bg5b9c.xn--p1ai/places" target="_blank" rel="noopener">«Забыли сахар» · официальный список адресов ↗</a><a href="https://coffeemap.ru/coffee/moscow/surf-coffee-168" target="_blank" rel="noopener">Surf Coffee · карточка точки ↗</a></div>
+    </div>
+  </section>
+<section class="block mgmt" id="due-diligence" aria-labelledby="due-diligence-h">
+    <div class="wrap">
+      <p class="label">до подписания LOI · проверка помещения</p>
+      <h2 id="due-diligence-h">Сначала подтверждаем <em>условия площадки</em></h2>
+      <p class="lead">Результат проекта в первую очередь зависит от конкретного блока, трафика и арендной конструкции. До обязательств по аренде необходимо получить пакет данных от оператора и провести собственные замеры.</p>
+      <div class="mgmt-columns">
+        <div>
+          <h3>Запросить у оператора вокзала</h3>
+          <ul class="decision-list">
+            <li>Свободные блоки 150–200 м², поэтажные планы, точная площадь и схема входов.</li>
+            <li>Пассажиропоток по зонам, этажам, направлениям и часам; отдельно будни, выходные и сезонность.</li>
+            <li>Проект договора: фиксированная ставка, процент с оборота, эксплуатация, маркетинговые платежи, депозит, индексация и арендные каникулы.</li>
+            <li>Технические условия: электрическая мощность, вентиляция и вытяжка, вода, канализация, пожарные системы и допустимое оборудование.</li>
+            <li>Правила разгрузки, хранения, вывоза отходов, вывески, режима работы и доступа персонала.</li>
+            <li>Порядок согласования проектных решений в здании — объекте культурного наследия.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Проверить самостоятельно</h3>
+          <ul class="decision-list">
+            <li>Полевые подсчёты проходящего потока у каждого кандидата на блок по 15-минутным интервалам.</li>
+            <li>Наблюдение за очередями конкурентов и фактическим временем обслуживания в утренний, дневной и вечерний пики.</li>
+            <li>Тест цен и меню на пассажирах с фиксацией конверсии, среднего чека и отказов.</li>
+            <li>Проверка логистики «заказ — сборка — выдача к поезду» на реальном расписании.</li>
+            <li>Получение минимум двух предложений по ключевым категориям оборудования и упаковки.</li>
+            <li>Юридическая и налоговая проверка договора, разрешений, упаковки и применимого режима НДС.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="mgmt-note">Контрольная точка: не подписывать безусловный долгосрочный договор аренды до получения трафика по конкретной зоне, технических условий и расчёта полной стоимости владения помещением.</p>
+    </div>
+  </section>
+<section class="block mgmt" id="operations" aria-labelledby="operations-h">
+    <div class="wrap">
+      <p class="label">операционная модель</p>
+      <h2 id="operations-h">Скорость — результат <em>технологии, а не компромисс качества</em></h2>
+      <p class="lead">Всё, что требует длительного приготовления, выполняется заранее. В момент заказа кухня доводит блюдо, собирает порцию и передаёт её в нужный канал выдачи.</p>
+      <div class="flowline">
+        <div class="flowstep"><b>Приёмка и подготовка</b><span>Контроль сырья, разделка, базовые заготовки и бульоны.</span></div>
+        <div class="flowstep"><b>Предварительное приготовление</b><span>Томление, су-вид, соусы и cook-chill по утверждённым техкартам.</span></div>
+        <div class="flowstep"><b>Доводка на заказ</b><span>Индукция или саламандр, гарнир, соус и сборка блюда.</span></div>
+        <div class="flowstep"><b>Выдача</b><span>Фарфор в зале, упаковка навынос или заказ на полке к поезду.</span></div>
+      </div>
+      <div class="kpi-bar">
+        <div class="kpi"><b>90%</b><span>целевой показатель заказов, выданных не позднее 5 минут в пиковый период</span></div>
+        <div class="kpi"><b>32</b><span>позиции еды в представленном меню, включая комплексный обед; итоговое операционное меню требует сокращения и тестирования</span></div>
+        <div class="kpi"><b>2–3 мин</b><span>плановая доводка горячего на станции выдачи</span></div>
+      </div>
+      <div class="mgmt-columns">
+        <div><h3>Контроль качества</h3><p>Технологические карты, контроль температуры и сроков, маркировка, производственный контроль и обучение смен. В инвестиционном проекте предусмотрены ХАССП и необходимые процедуры прослеживаемости.</p></div>
+        <div><h3>Ключевое оборудование</h3><p>Пароконвектоматы, шоковые охладители, су-вид, индукционная станция доводки, саламандры, вакуумный упаковщик, холодильное и упаковочное оборудование.</p></div>
+      </div>
+    </div>
+  </section>
+<section class="block mgmt" id="formats" aria-labelledby="formats-h"><div class="wrap">
+<p class="label">альтернативы · решение после проверки</p>
+<h2 id="formats-h">Не один сценарий.<br><em>Три варианта действий.</em></h2>
+<p class="lead">Предлагается оценить несколько конфигураций, прежде чем выбирать площадку и запрашивать инвестиционный бюджет. Сравнение ниже отражает архитектуру решения, а не просчитанные инвестиционные альтернативы.</p>
+<div class="format-scroll"><table class="format-table"><thead><tr><th>Критерий</th><th>Кафе ≈180 м²</th><th>Компактный формат ≈90 м²</th><th>Отказ / перенос запуска</th></tr></thead><tbody>
+<tr><th>Продукт</th><td>Полноценная посадка, кухня, выдача в поезд</td><td>Короткое меню и приоритет выдачи навынос</td><td>Сохранение разработанной концепции без обязательств</td></tr>
+<tr><th>Потенциальное преимущество</th><td>Выше потенциал выручки при достаточном потоке</td><td>Потенциально ниже абсолютные инвестиции и потребность в площади</td><td>Отсутствие инвестиционного риска по неподтверждённой площадке</td></tr>
+<tr><th>Главное ограничение</th><td>Высокая аренда, сложная инженерия и требования к штату</td><td>Меньшая посадка и ограничения технологического процесса</td><td>Упущенная возможность, но сохранение ресурсов компании</td></tr>
+<tr><th>Что проверить</th><td>Инженерия, кухня, трафик, CAPEX, ФОТ, окупаемость на ОСНО</td><td>Разрешённое оборудование, меню, поток, площадь подсобных зон</td><td>Наличие лучших площадок и альтернативных инвестиционных идей</td></tr>
+</tbody></table></div>
+<p class="mgmt-note"><b>Принцип отбора:</b> не выбирать 180 м² только потому, что так устроена первая версия концепции. Решение — по сопоставимым денежным потокам на ОСНО, рискам и требованиям к сервису. При отсутствии приемлемых условий проект должен иметь право на остановку.</p>
+</div></section>
+<section class="block mgmt-dark" id="unit-test" aria-labelledby="unit-test-h"><div class="wrap">
+<p class="label">проверяемые гипотезы · не NPV</p>
+<h2 id="unit-test-h">Что меняет <em>поток и средний чек</em></h2>
+<p class="lead">Пока нельзя надёжно сравнивать рентабельность 180 и 90 м², но можно показать прозрачную арифметику кассовой выручки. Ни один сценарий ниже не является прогнозом спроса.</p>
+<div class="format-scroll"><table class="format-table"><thead><tr><th>Параметр</th><th>≈180 м²: иллюстрация</th><th>≈90 м²: иллюстрация</th></tr></thead><tbody>
+<tr><th>Чеков в день</th><td>750</td><td>563</td></tr><tr><th>Средний чек покупателя</th><td>750 ₽</td><td>700 ₽</td></tr><tr><th>Кассовая выручка за год</th><td>≈205,3 млн ₽</td><td>≈143,8 млн ₽</td></tr>
+<tr><th>При изменении потока на ±10%</th><td>≈184,8–225,8 млн ₽</td><td>≈129,4–158,2 млн ₽</td></tr>
+<tr><th>Влияние на прибыльность</th><td>Не рассчитывается без модели ОСНО и подтверждённых затрат</td><td>Не рассчитывается без отдельной модели затрат компактного формата</td></tr>
+</tbody></table></div>
+<p class="mgmt-note"><b>Метод:</b> чеков в день × средний кассовый чек × 365 дней, до учёта НДС, без сезонности и ramp-up. В чеке может содержаться НДС в зависимости от применимости освобождения для общепита. Механическое деление выручки на расходы, сравнение EBITDA и NPV для этих форматов без расчёта налогов и CAPEX было бы методической ошибкой.</p>
+<div class="mgmt-columns"><div><h3>Как проверить конверсию</h3><p>Измерить поток у конкретного входа по дням, часам и направлениям, выделить релевантные группы пассажиров, проверить долю людей, у которых достаточно времени на покупку. Число покупателей не выводить напрямую из суммарного трафика вокзала.</p></div><div><h3>Условия отказа</h3><p>Нет технически реализуемой кухни, недоступны согласования, арендная нагрузка делает модель убыточной, не подтверждается поток или невозможно обеспечить смены в пределах допустимого ФОТ. В таком случае формат меняется либо инициатива останавливается.</p></div></div>
+</div></section>
+<section class="block mgmt-dark" id="economics" aria-labelledby="economics-h">
+<div class="wrap">
+<p class="label">финансовая гипотеза · ОСНО</p>
+<h2 id="economics-h">Экономика ещё <em>не подтверждена</em></h2>
+<p class="lead">Проект предлагается реализовывать внутри действующего юридического лица, применяющего общую систему налогообложения (ОСНО). Прежние NPV, IRR, EBITDA, окупаемость и пороги безубыточности из расчётов с предпосылками УСН <b>не являются действующим инвестиционным прогнозом</b> и сознательно исключены из презентации.</p>
+<div class="mgmt-grid">
+<article class="mgmt-card"><span class="num">≈180 м²</span><b>Площадь — гипотеза</b><small>Требует конкретного помещения и его обследования</small></article>
+<article class="mgmt-card"><span class="num">≈750 ₽</span><b>Чек — гипотеза</b><small>Проверить спросом, ценовым тестом и ассортиментом</small></article>
+<article class="mgmt-card"><span class="num">≤5 млн ₽</span><b>Лимит персонала в месяц</b><small>Плановый предел полной стоимости, не подтверждён сменным графиком</small></article>
+<article class="mgmt-card"><span class="num">≈51 млн ₽</span><b>Черновой масштаб вложений</b><small>Не бюджет и не запрос на выделение средств</small></article>
+</div>
+<div class="mgmt-columns">
+<div><h3>Что уже есть</h3><p class="muted">Концепция кухни и сервиса, предварительное меню, продуктовые калькуляции, гипотезы площади и штата, обзор конкурентного окружения и перечень рисков. Это исходные материалы для проверки, а не договорная или финансовая база.</p></div>
+<div><h3>Что определит экономику</h3><p class="muted">Право действующей компании на освобождение услуг общепита от НДС и структура операций; фактическая аренда, CAPEX с налогами, поток у помещения, конверсия, средний чек, ФОТ по сменам, доступная мощность кухни и оборотный капитал.</p></div>
+</div>
+<p class="mgmt-note"><b>Порядок расчёта:</b> после предварительного согласия руководства разработать помесячную модель на ОСНО минимум в двух налоговых сценариях — с подтверждённым освобождением операций общепита от НДС и без него. Включить налог на прибыль, амортизацию, страховые взносы, входной НДС, сезонность и все инвестиционные платежи. Ни один показатель доходности не предлагается утверждать сейчас.</p>
+</div></section>
+<section class="block mgmt" id="financial-detail" aria-labelledby="financial-detail-h"><div class="wrap">
+<p class="label">контрольные допущения</p><h2 id="financial-detail-h">Что предстоит <em>доказать цифрами</em></h2>
+<div class="mgmt-columns">
+<div><h3>Экономика ресторанной точки</h3><p>Сверить реальные цены и микс продаж, 3–5 минут на выдаче, операционную пропускную способность, график и стоимость персонала. Текущие продуктовые калькуляции — отправная точка, а не итоговый P&amp;L.</p></div>
+<div><h3>Капитал и налоги</h3><p>Получить предварительные условия по площадям, технические данные и смету CAPEX. Оценить расходы по ОСНО в составе действующего юридического лица и влияние НДС на цену и денежный поток.</p></div>
+</div>
+<div class="mgmt-note"><b>Правило инвестиционной дисциплины:</b> не публиковать точные NPV, IRR, EBITDA и срок окупаемости, пока нет единой проверяемой помесячной модели. Сценарии и альтернативные форматы 180 м² / 90 м² будут сопоставлены на этапе предпроектной проработки.</div>
+</div></section>
+<section class="block mgmt" id="staff-audit" aria-labelledby="staff-audit-h"><div class="wrap">
+<p class="label">операционная проверка · рабочая гипотеза</p>
+<h2 id="staff-audit-h">Справятся ли <em>34 сотрудника?</em></h2>
+<p class="lead">Ниже не готовое штатное расписание, а арифметическая проверка модели при ежедневной работе с 05:30 до 23:30. Она помогает обнаружить ограничения до найма и не доказывает способность обслужить прогнозный поток.</p>
+<div class="mgmt-grid">
+<article class="mgmt-card"><span class="num">126 ч</span><b>Работа точки в неделю</b><small>18 часов × 7 дней, без выходных для кафе</small></article>
+<article class="mgmt-card"><span class="num">1 156 ч</span><b>Доступно в неделю</b><small>34 сотрудника × 40 ч × 85%; условный резерв отсутствий 15%</small></article>
+<article class="mgmt-card"><span class="num">1 026 ч</span><b>Потребность базового графика</b><small>По условной схеме рабочих постов и управленческого присутствия</small></article>
+<article class="mgmt-card"><span class="num">130 ч</span><b>Нераспределённый ресурс</b><small>Не доказанный запас: перерывы, подмены, пересменки, пики</small></article>
+</div>
+<div class="format-scroll"><table class="format-table"><caption style="caption-side:top;text-align:left;padding:0 0 12px">Условный недельный баланс по должностям, в человеко-часах</caption><thead><tr><th>Группа</th><th>Штат</th><th>Доступно</th><th>Нужно</th><th>Разница</th><th>Основание</th></tr></thead>
+<tbody><tr><td>Управляющий</td><td>1</td><td>34</td><td>30</td><td>4</td><td>Присутствие по графику, не весь период работы</td></tr>
+<tr><td>Шеф-повар</td><td>1</td><td>34</td><td>30</td><td>4</td><td>Контроль производства и качества; не весь период работы</td></tr>
+<tr><td>Су-шефы смен</td><td>4</td><td>136</td><td>126</td><td>10</td><td>По одному ответственному за смену ежедневно</td></tr>
+<tr><td>Повара</td><td>10</td><td>340</td><td>294</td><td>46</td><td>По 2 утром/вечером и 3 днём</td></tr>
+<tr><td>Сборка и кассы</td><td>9</td><td>306</td><td>294</td><td>12</td><td>По 2 утром/вечером и 3 днём</td></tr>
+<tr><td>Кухонные работники</td><td>5</td><td>170</td><td>126</td><td>44</td><td>По одному в каждый операционный час</td></tr>
+<tr><td>Уборка зала</td><td>4</td><td>136</td><td>126</td><td>10</td><td>По одному в каждый операционный час</td></tr><tr><th>Итого</th><th>34</th><th>1156</th><th>1026</th><th>130</th><th>Математический баланс, не утверждённый график</th></tr></tbody></table></div>
+<div class="mgmt-columns">
+<div><h3>Принятая схема присутствия</h3><p>Три шестичасовых окна: 05:30–11:30, 11:30–17:30 и 17:30–23:30. В каждом один су-шеф, по два повара и кассира утром и вечером, по три — днём, по одному кухонному работнику и уборщику. Управляющий и шеф — по 30 ч в неделю каждый, с передачей функций на время отсутствия.</p></div>
+<div><h3>Почему это ещё не график</h3><p>Должностная взаимозаменяемость, трудовые перерывы, выходные, отпуск, больничные, ночные доплаты, подготовка до открытия, пересменки и реальные пики не смоделированы. Особенно узкое место — кассово-сборочная зона: условный резерв всего 12 ч в неделю; для су-шефов — 10 ч.</p></div>
+</div>
+<p class="mgmt-note"><b>Вывод для руководства:</b> 34 человека <b>не опровергнуты арифметикой</b>, но и не подтверждены как достаточный штат. Требуется график по каждому сотруднику с покрытием каждой должности по 30-минутным интервалам и нагрузочный тест на целевые чеки. Бюджет полной стоимости персонала до 5 млн ₽/мес. — ограничение, а не гарантия возможности найма.</p>
+</div></section>
+<section class="block" id="risks" aria-labelledby="risks-h">
+    <div class="wrap">
+      <p class="label">управление рисками</p>
+      <h2 id="risks-h">Сначала проверяем.<br><em>Потом инвестируем.</em></h2>
+      <div class="risk-grid">
+        <article class="risk"><b>Трафик ниже плана</b><p>Замеры у конкретного блока, данные оператора, ценовой тест, оборотная аренда и стоп-критерий по итогам шестого месяца.</p></article>
+        <article class="risk"><b>Аренда и условия договора</b><p>Согласовать фиксированную и оборотную части, эксплуатационные платежи, индексацию и условия выхода до принятия обязательств.</p></article>
+        <article class="risk"><b>Технические ограничения помещения</b><p>Получить техусловия до LOI: мощность, вентиляция, размещение оборудования и согласования для объекта культурного наследия.</p></article>
+        <article class="risk"><b>Скорость и стабильность качества</b><p>Тестовые прогоны меню, стандарты cook-chill, контроль времени выдачи и регулярная проверка качества.</p></article>
+        <article class="risk"><b>Рост фонда оплаты труда</b><p>Стандартизация процессов, планирование смен и производительности, обучение и контроль доли ФОТ в выручке.</p></article>
+        <article class="risk"><b>Рост закупочных цен</b><p>Два поставщика на ключевые позиции, сезонное меню, фиксация цен и регулярная актуализация калькуляций.</p></article>
+      </div>
+      <p class="fin-foot">Влияние рисков на NPV и меры приведены в инвестиционном документе. Перед инвестиционным решением необходимо обновить оценки по фактическим условиям помещения, договору и налоговому заключению.</p>
+    </div>
+  </section>
+<section class="block mgmt" id="roadmap" aria-labelledby="roadmap-h"><div class="wrap">
+<p class="label">дорожная карта · по решению руководства</p>
+<h2 id="roadmap-h">Сначала проверка.<br><em>Потом проектирование и инвестиции.</em></h2>
+<p class="lead">Никакие официальные запросы и коммерческие обязательства пока не инициированы. Этапы ниже — предложение к согласованию, не календарь утверждённых работ.</p>
+<div class="timeline">
+<article class="phase"><small>ЭТАП 01</small><b>Разрешение на проработку</b><p>Назначить куратора, определить границы и формат внутреннего исследования.</p></article>
+<article class="phase"><small>ЭТАП 02</small><b>Предпроектная проверка</b><p>Доступность помещений, первичная техническая оценка, наблюдения за потоком, ценовые тесты.</p></article>
+<article class="phase"><small>ЭТАП 03</small><b>Сравнение вариантов</b><p>180 м², 90 м² и альтернативные форматы; смены, ФОТ, риски, налоги ОСНО, CAPEX.</p></article>
+<article class="phase"><small>ЭТАП 04</small><b>Инвестиционный комитет</b><p>Представить проверяемую помесячную модель и варианты «реализовать / доработать / отказаться».</p></article>
+<article class="phase"><small>ЭТАП 05</small><b>Реализация — только после одобрения</b><p>Договоры, проектирование, оборудование, найм и запуск — по отдельному решению.</p></article>
+</div>
+<div class="mgmt-columns">
+<div><h3>Штатная гипотеза · 34 человека</h3><p>Управляющий — 1; шеф-повар — 1; су-шефы смен — 4; повара — 10; сборщики и кассиры — 9; мойщики и кухонные работники — 5; уборщики зала — 4.</p><p class="mgmt-note"><b>Полная стоимость персонала:</b> бюджетная цель до 5,0 млн ₽ в месяц при пропорционально скорректированных окладах и расчётных резервах. Режим 05:30–23:30 означает 126 часов работы в неделю. 34 сотрудника × 40 часов дают максимум 1 360 плановых человеко-часов в неделю до отпусков и отсутствий, но их распределение по должностям и сменам не рассчитано. Не доказано покрытие отпусков и пиков без переработок. Требуется сменное моделирование и проверка найма по рынку Москвы.</p></div>
+<div><h3>Показатели для проверки</h3><p>Пассажирский поток непосредственно у блока, конверсия в чек, средний чек, продуктовая себестоимость, загрузка кухни, ожидание выдачи, аренда к выручке, ФОТ к выручке и потенциальный срок окупаемости после полного пересчёта.</p></div>
+</div>
+</div></section>
+<section class="block" id="evidence-plan" aria-labelledby="evidence-plan-h"><div class="wrap">
+<p class="label">результат первого согласования</p>
+<h2 id="evidence-plan-h">Что руководство получит <em>после проработки</em></h2>
+<p class="lead">После разрешения на работу — пакет материалов, позволяющий принять отдельное инвестиционное решение. Ответственные ниже обозначены по функциям, назначение конкретных сотрудников не предполагается.</p>
+<div class="format-scroll"><table class="format-table"><thead><tr><th>Блок работы</th><th>Проверяемый результат</th><th>Предполагаемый ответственный</th><th>Критерий завершения</th></tr></thead><tbody>
+<tr><td>Коммерческая гипотеза</td><td>Замеры потока у кандидатов на блок, конверсия, цены и конкурентное сравнение</td><td>Коммерческая функция</td><td>Есть наблюдения и диапазон спроса, а не только общий поток вокзала</td></tr>
+<tr><td>Площадка и инженерия</td><td>Планы, ограничения помещения, технические мощности, проект аренды и смета</td><td>Техническая / юридическая функции</td><td>Есть реализуемый вариант размещения с перечнем условий</td></tr>
+<tr><td>Продукт и производство</td><td>Сокращённое меню, техкарты, скорость выдачи, санитарная схема, упаковка</td><td>Операционная функция и шеф</td><td>Подтверждена скорость, себестоимость, качество и безопасность</td></tr>
+<tr><td>Персонал</td><td>Посменная модель 34 сотрудников, тарифы и расчёт полной стоимости</td><td>Операционная функция / HR / финансы</td><td>Закрываются 126 часов работы в неделю без неучтённых переработок</td></tr>
+<tr><td>Налоги и финансы</td><td>Помесячная модель на ОСНО, варианты НДС, CAPEX, оборотный капитал, риски</td><td>Финансовая / налоговая функция</td><td>Воспроизводимые NPV, IRR и пороги отказа от проекта</td></tr>
+<tr><td>Отдельные возможности</td><td>Оценка подарков детям и направления питания «Сапсан» / ВСМ</td><td>Коммерческая функция</td><td>Есть план исследования, нет обещаний неподтверждённых договоров</td></tr>
+</tbody></table></div>
+<p class="mgmt-note"><b>Результат:</b> рекомендация «реализовать / изменить формат / отложить / отказаться», с указанием источников данных и границ точности. Контакты с оператором вокзала и потенциальными партнёрами проводятся только после внутреннего разрешения в согласованном порядке.</p>
+</div></section>
+<section class="block" id="family" aria-labelledby="family-h"><div class="wrap">
+<p class="label">гипотеза семейного сервиса</p><h2 id="family-h">Маленький подарок.<br><em>Большая память о путешествии.</em></h2>
+<p class="lead">Изучить идею сувенира каждому ребёнку до 10 лет, посетившему кафе: небольшая книжка путешественника, наклейки или коллекционная открытка с мотивами железной дороги.</p>
+<div class="mgmt-columns"><div><h3>Для пассажира</h3><p>Создаёт положительное впечатление от ожидания поезда, делает кафе дружелюбным к семьям и поддерживает исторический образ бренда.</p></div>
+<div><h3>Для экономики</h3><p>Рабочее допущение — 50–70 ₽ на подарок. Например, 30 подарков ежедневно по 60 ₽ дают около 54 тыс. ₽ затрат за 30 дней. Тиражи, количество детей и повторные выдачи подлежат проверке.</p></div></div>
+<p class="mgmt-note">Это идея для дальнейшего тестирования, не действующая акция. До внедрения — права на графику, возрастная маркировка, требования к детской продукции и ограничения по выдаче. Расходы не учтены в исходной финансовой модели.</p>
+</div></section>
+<section class="block mgmt-dark" id="growth" aria-labelledby="growth-h"><div class="wrap">
+<p class="label">потенциал второго этапа · B2B</p><h2 id="growth-h">От ресторана — к <em>гастрономии путешествий</em></h2>
+<p class="lead">Возможное стратегическое расширение: разработка готовых рационов, предзаказов и презентационных гастрономических событий для железнодорожного транспорта. На текущей стадии ни контракты, ни партнёры, ни объёмы не подтверждены.</p>
+<div class="mgmt-grid">
+<article class="mgmt-card"><span class="num">01</span><b>«Сапсан»</b><small>Изучить действующих операторов бортового питания и условия потенциального контрактного производства или субподряда.</small></article>
+<article class="mgmt-card"><span class="num">02</span><b>ВСМ</b><small>Проработать требования к концепции питания в высокоскоростных поездах после появления подтверждённых условий.</small></article>
+<article class="mgmt-card"><span class="num">03</span><b>Дегустационные ужины</b><small>В перспективе — закрытые презентации меню, сервиса и упаковки потенциальным партнёрам; только после согласования.</small></article>
+<article class="mgmt-card"><span class="num">04</span><b>Поставка рационов</b><small>Отдельно проверить пищевую безопасность, логистику, мощности, персонал и производственный CAPEX.</small></article>
+</div>
+<div class="mgmt-columns"><div><h3>Реалистичный путь входа</h3><p class="muted">Сначала исследование существующей схемы питания поездов и требований действующих партнёров; затем образцы блюд, тест срока хранения и логистики, переговоры по согласованию руководства.</p></div>
+<div><h3>Что нельзя обещать сегодня</h3><p class="muted">Прямой договор с РЖД, эксклюзив на «Сапсаны» или ВСМ, объёмы заказов и доходы от бортового питания. Вся B2B-экономика должна рассматриваться отдельно от финансовой модели кафе.</p></div></div>
+<p class="mgmt-note"><b>Правильная формулировка для органов управления:</b> «Изучить коммерческую и технологическую возможность развития направления пассажирского питания на железнодорожном транспорте». Не включать предполагаемую выручку в базовые показатели ресторана.</p>
+</div></section>
+<section class="block decision" id="decision" aria-labelledby="decision-h"><div class="wrap">
+<p class="label">вопрос на рассмотрение генерального директора и совета директоров</p>
+<h2 id="decision-h">Разрешить проработку.<br><em>Не утверждать инвестиции.</em></h2>
+<p class="lead">Просим принципиально поддержать изучение инициативы «Николаевская» как возможного нового направления действующей компании общественного питания и поручить подготовить материалы для отдельного инвестиционного решения.</p>
+<div class="decision-box">
+<div><span class="status">Предлагается разрешить следующий этап</span><ul class="decision-list">
+<li>Уточнить форматы 180 м² и 90 м² и критерии выбора; предварительно изучить доступные блоки.</li>
+<li>Проверить пассажирский сценарий, целевую аудиторию, спрос и конкурентоспособность цен.</li>
+<li>Оценить допустимую технологию, сменный штат, производственные мощности и ориентир CAPEX.</li>
+<li>Подготовить помесячную финансовую модель на ОСНО, включая разные варианты НДС.</li>
+<li>Рассмотреть семейный сервис и потенциал питания «Сапсанов» / ВСМ как отдельные гипотезы развития.</li>
+</ul></div>
+<div><h3>Что решение не означает</h3><ul class="decision-list">
+<li>Не выделяет бюджет строительства и не подтверждает доходность.</li>
+<li>Не даёт право подписывать аренду, закупки или другие обязательства без отдельного решения.</li>
+<li>Не означает согласования или участия РЖД, оператора вокзала и перевозчиков.</li>
+<li>Не подтверждает контрактов на питание поездов и запуск услуг.</li>
+<li>Не устанавливает обязательную дату открытия.</li>
+</ul></div>
+</div>
+<div class="mgmt-note"><b>Предлагаемый результат следующего этапа:</b> концепт с верифицированными предпосылками; сравнительный анализ форматов; дорожная карта согласований; предварительная смета и независимая проверка рисков; финансовая модель ОСНО; предложение «реализовать / доработать / отказаться». Возможный лимит предпроектных расходов 0,5–0,8 млн ₽ — отдельный предмет согласования, не утверждённый бюджет.</div>
+</div></section><section id="caveats"><p class="label">Ограничения и статус</p><h2>Что не утверждено</h2>
+<ul><li>Нет согласованного помещения, планов инженерии и коммерческих условий аренды.</li><li>Нет подтверждённого измерения потока непосредственно у входа в точку.</li><li>Нет официального решения РЖД, перевозчиков или оператора вокзала об участии.</li><li>Финансовая модель, собранная с прежними предпосылками УСН, не применима для инвестиционного решения компании на ОСНО.</li><li>Визуальная концепция POETICA и изображения требуют проверки разрешений правообладателей для коммерческого использования.</li><li>Подарки детям, питание поездов и гастрономические ужины — возможности второго этапа, не включены в базовые продажи.</li></ul>
+<p class="mgmt-note">Документ подготовлен для внутреннего обсуждения идеи. Перед внешней публикацией и подписанием договоров необходимы юридическая, налоговая и техническая проверки.</p></section></main><footer>«Николаевская» · Предварительное техническое досье · 23.11.2026 · Печать в формате A4</footer></body></html>

@@ -477,6 +477,9 @@ footer b { color: var(--ink); font-weight: 500; }
 @media(max-width:860px){.top .wrap{height:auto;min-height:64px;flex-wrap:wrap;padding-top:12px;padding-bottom:10px;gap:10px}.nav{display:flex;order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:18px;padding:2px 0 5px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.brand span{display:none}}
 @media(max-width:620px){.comp-grid,.market-gap{grid-template-columns:1fr}.packaging-stage{padding:12px;min-height:245px}.packaging-set{gap:8px;min-height:220px}.pack-bag{height:175px;padding:55px 6px 12px}.pack-bag:before{height:25px}.pack-box{height:118px;padding:12px 5px}.pack-soup{width:90px;height:120px;padding:22px 5px 8px}.pack-name{font-size:12px}.pack-sub{font-size:7px}.pack-flower{width:17px;height:17px}.packaging-specs{grid-template-columns:1fr 1fr}.cost-legend{grid-template-columns:1fr}}
 
+
+/* First stage: management decision and evidence labeling */
+.brief-banner{border-block:1px solid #ad8c77;background:#35232c;color:#f8f2eb;padding:30px 0}.brief-banner .brief-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:center}.brief-banner h2{font-size:clamp(27px,3.7vw,42px);line-height:1.18;margin:9px 0 12px}.brief-banner p{margin:0 0 12px;line-height:1.6}.brief-banner .status{display:inline-block;border:1px solid #bea486;padding:6px 10px;font-size:12px;color:#f6d9bc}.brief-actions{display:flex;gap:12px;flex-wrap:wrap}.brief-actions a{display:inline-block;color:#fff;border:1px solid #ceb49b;padding:11px 15px;text-decoration:none}.evidence-table{width:100%;border-collapse:collapse}.evidence-table th,.evidence-table td{padding:13px;text-align:left;vertical-align:top;border-bottom:1px solid #b69e8b66}.evidence-table th{font-size:13px;letter-spacing:.03em}.evidence-table td{font-size:14px}.brief-card{padding:20px;border:1px solid #bfa78e;background:#ffffff0d}.brief-card li{margin-bottom:10px}.brief-status{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#ead6bd}@media(max-width:720px){.brief-banner .brief-grid{grid-template-columns:1fr}.brief-banner{padding:22px 0}.evidence-table th,.evidence-table td{padding:9px;font-size:12px}}
 </style>
 </head>
 <body>
@@ -495,12 +498,12 @@ footer b { color: var(--ink); font-weight: 500; }
   <section class="hero" aria-labelledby="hero-h">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow"><span>кафе</span><i>·</i><span>Ленинградский вокзал</span><i>·</i><span>открытие в 2027 году</span></p>
+        <p class="eyebrow"><span>предварительная концепция</span><i>·</i><span>для внутреннего обсуждения</span><i>·</i><span>Москва</span></p>
         <h1 id="hero-h">Ресторанное блюдо <span class="amp">за&nbsp;3–5&nbsp;минут</span></h1>
         <p class="lead">По цене бизнес-ланча. Здесь, на фарфоре, или с собой: порция та же, упаковка без доплаты.</p>
         <div class="actions">
-          <a class="btn solid" href="#menu">Смотреть меню</a>
-          <a class="btn" href="#poezd">Коробки в поезд</a>
+          <a class="btn solid" href="#decision">Решение для руководства</a>
+          <a class="btn" href="#menu">Смотреть концепцию меню</a>
           
         </div>
       </div>
@@ -511,15 +514,28 @@ footer b { color: var(--ink); font-weight: 500; }
     </div>
     <div class="wrap">
       <dl class="facts">
-        <div><dt>3–5 мин</dt><dd>горячее на выдаче, при вас только доводка</dd></div>
-        <div><dt>750 ₽</dt><dd>средний чек, обед за 790 ₽</dd></div>
-        <div><dt>05:30</dt><dd>открываемся к первым поездам, до 23:30</dd></div>
-        <div><dt>56 мест</dt><dd>и витрина «возьми и иди»</dd></div>
+        <div><dt>3–5 мин</dt><dd>целевое время выдачи; ещё не испытано</dd></div>
+        <div><dt>750 ₽</dt><dd>предварительная гипотеза среднего чека</dd></div>
+        <div><dt>05:30–23:30</dt><dd>планируемый режим, не утверждён</dd></div>
+        <div><dt>56 мест</dt><dd>проектная гипотеза, зависит от помещения</dd></div>
       </dl>
     </div>
   </section>
 
-  <section class="epigraph" aria-label="Эпиграф">
+  <section class="brief-banner" id="brief" aria-labelledby="brief-h"><div class="wrap brief-grid">
+<div><span class="brief-status">Инвестиционная инициатива · предварительная стадия</span><h2 id="brief-h">Просим разрешить <em>проработку концепции</em></h2>
+<p>«Николаевская» — возможное новое кафе действующей компании общепита на Ленинградском вокзале. Предлагаем проверить спрос, площадку, технологию и экономику на ОСНО до любых инвестиционных обязательств.</p>
+<div class="brief-actions"><a href="#decision">Предлагаемое решение →</a><a href="#evidence">Что известно и что проверяем</a></div>
+</div><div class="brief-card"><span class="status">На этом этапе не требуется</span><ul><li>Утверждение капитальных вложений</li><li>Подписание аренды или контрактов</li><li>Публичное заявление о поддержке РЖД</li><li>Обязательство открыть ресторан к конкретной дате</li></ul></div>
+</div></section>
+<section class="block" id="evidence" aria-labelledby="evidence-h"><div class="wrap"><p class="label">статус предпосылок</p><h2 id="evidence-h">Отделяем <em>факты от гипотез</em></h2>
+<table class="evidence-table"><thead><tr><th>Подтверждено в рамках инициативы</th><th>Рабочие гипотезы</th><th>Нужно проверить после одобрения</th></tr></thead>
+<tbody><tr><td>Идея нового направления внутри действующей компании общепита; компания применяет ОСНО.</td><td>Формат русской и северной кухни; 3–5 минут на выдаче; еда в поезд.</td><td>Технологические испытания, техкарты, безопасность и производительность.</td></tr>
+<tr><td>Есть концепт-сайт, материалы визуальной концепции и предварительная калькуляция меню.</td><td>180 м², 56 посадочных мест, 34 сотрудника, средний чек около 750 ₽.</td><td>Площадка, инженерия, посменная работа, ФОТ, спрос и цены.</td></tr>
+<tr><td>Исследован круг публичных конкурентных предложений.</td><td>Потенциал продаж в выбранной зоне вокзала и дополнительных каналов.</td><td>Пассажирский поток у конкретного блока, конверсия, аренда, договоры.</td></tr>
+<tr><td>Руководству предлагается принять решение только о проработке.</td><td>Потенциал семейного сервиса и B2B-питания в «Сапсанах» / ВСМ.</td><td>Партнёры, право на производство, пилоты, экономика и требования перевозчика.</td></tr></tbody></table>
+<p class="mgmt-note"><b>Важно:</b> конкретное помещение не выбрано; официальные обращения к оператору вокзала и перевозчикам не направлялись; участие РЖД не согласовано. Визуальные материалы POETICA — референс, а не готовый к реализации архитектурный проект; права на использование должны быть проверены.</p></div></section>
+<section class="epigraph" aria-label="Эпиграф">
     <div class="wrap">
       <img src="branch.png" width="754" height="654" alt="">
       <div>
@@ -878,78 +894,31 @@ footer b { color: var(--ink); font-weight: 500; }
   </section>
 
   <section class="block mgmt-dark" id="economics" aria-labelledby="economics-h">
-    <div class="wrap">
-      <p class="label">финансовая модель</p>
-      <div class="fin-head">
-        <div><h2 id="economics-h">Экономика проекта <em>в цифрах</em></h2><p class="muted">Базовый сценарий и целевые условия входа — не смешиваем.</p></div>
-        <span class="status">План · 2027–2032</span>
-      </div>
-      <div class="scenario-grid">
-        <article class="scenario">
-          <h3>Базовый сценарий</h3>
-          <div class="big negative">−6,1 млн ₽</div>
-          <p>NPV при ставке дисконтирования 25%</p>
-          <p>IRR 19% · простая окупаемость 41 месяц</p>
-          <p>Инвестиции 51,2 млн ₽ · 767 чеков в день во втором году</p>
-        </article>
-        <article class="scenario">
-          <h3>Целевой сценарий</h3>
-          <div class="big positive">+27,0 млн ₽</div>
-          <p>NPV при ставке дисконтирования 25%</p>
-          <p>IRR 53% · простая окупаемость 26 месяцев</p>
-          <p>Инвестиции 48,4 млн ₽ · 839 чеков в день во втором году</p>
-        </article>
-      </div>
-      <table class="fin-table" aria-label="Сравнение базового и целевого сценариев">
-        <thead><tr><th>Показатель</th><th>Базовый</th><th>Целевой</th></tr></thead>
-        <tbody>
-          <tr><td>Средний чек, 2027</td><td>750 ₽</td><td>750 ₽</td></tr>
-          <tr><td>Чеков в день, год 2</td><td>767</td><td>839</td></tr>
-          <tr><td>Выручка, год 2</td><td>222,6 млн ₽</td><td>—</td></tr>
-          <tr><td>EBITDA, год 2</td><td>17,7 млн ₽</td><td>29,4 млн ₽</td></tr>
-          <tr><td>Маржа EBITDA, год 2</td><td>8,4%</td><td>—</td></tr>
-          <tr><td>Инвестиции</td><td>51,2 млн ₽</td><td>48,4 млн ₽</td></tr>
-          <tr><td>NPV / IRR</td><td class="negative">−6,1 млн ₽ / 19%</td><td class="positive">+27,0 млн ₽ / 53%</td></tr>
-        </tbody>
-      </table>
-      <div class="scenario-grid scenario-grid-extra">
-        <article class="scenario"><h3>Пессимистичный</h3><div class="big negative">−107,4 млн ₽</div><p>NPV · 532 чека в день · EBITDA −14,5 млн ₽ во 2-м году</p><p>Инвестиции 57,3 млн ₽ · окупаемости нет</p></article>
-        <article class="scenario"><h3>Оптимистичный</h3><div class="big positive">+79,2 млн ₽</div><p>NPV · 1 020 чеков в день · EBITDA 53,2 млн ₽ во 2-м году</p><p>Инвестиции 51,0 млн ₽ · IRR 113% · окупаемость 15 месяцев</p><p>В модели учтён дополнительный трафик +8% до конца 2028 года.</p></article>
-        <article class="scenario"><h3>Корнер 90 м²</h3><div class="big positive">+0,3 млн ₽</div><p>NPV · 563 чека в день · EBITDA 12,0 млн ₽ во 2-м году</p><p>Инвестиции 29,8 млн ₽ · IRR 26% · окупаемость 38 месяцев</p><p>Альтернативный компактный формат, а не улучшенная доходность.</p></article>
-      </div>
-      <p class="fin-foot">Прочерк означает, что соответствующее значение не приводится в использованной таблице сценариев. В базовом сценарии аренда — 75 тыс. ₽/м² в год и 8% оборота; в целевом — 50 тыс. ₽/м² в год и 7% оборота. Публичный рыночный ориентир эксперта по площадям вокзала — от 65 тыс. ₽/м² в год без НДС (июнь 2026), поэтому целевую ставку необходимо подтвердить переговорами. Ожидаемое NPV по трём сценариям с весами 25% / 50% / 25% в исходной модели составляет −10,1 млн ₽. Значения являются расчётами модели, не гарантией результата.</p>
-      <div class="mgmt-note"><strong>Сверка продуктовой калькуляции и финансовой модели.</strong> В актуальном Excel средний чек по миксу — 749,97 ₽; фудкост по рецептуре — 27,19%, с коэффициентом 8% на потери, списания и питание персонала — 29,36%. В инвестиционной модели отдельно заложены 35% на продукты и 3,5% на упаковку. Разница между 35% и 29,36% составляет 5,64 п.п., или около 12,0 млн ₽ в год при выручке без НДС 212,0 млн ₽ второго года. Это не подтверждённая экономия и не готовая прибавка к EBITDA: до утверждения экономики нужно сверить состав статей, микс продаж, налоги, потери и границу между продуктами и упаковкой. В финансовой модели второго года продукты и упаковка вместе составляют 38,5% выручки без НДС.</div>
-      <div class="mgmt-columns">
-        <div><h3>Что определяет результат</h3><p class="muted">Главный фактор — фактическое количество чеков. По модели EBITDA выходит на безубыточность примерно при 616 чеках в день; для NPV около нуля требуется 768 чеков в день либо средний чек 768 ₽.</p></div>
-        <div><h3>Структура затрат второго года</h3><p class="muted">Продукты и упаковка — 81,6 млн ₽; ФОТ с взносами — 64,6 млн ₽; аренда и эксплуатационные расходы — 23,6 млн ₽; коммунальные, эквайринг, маркетинг, приложение и прочее — 24,5 млн ₽.</p></div>
-      </div>
-    </div>
-  </section>
+<div class="wrap">
+<p class="label">финансовая гипотеза · ОСНО</p>
+<h2 id="economics-h">Экономика ещё <em>не подтверждена</em></h2>
+<p class="lead">Проект предлагается реализовывать внутри действующего юридического лица, применяющего общую систему налогообложения (ОСНО). Прежние NPV, IRR, EBITDA, окупаемость и пороги безубыточности из расчётов с предпосылками УСН <b>не являются действующим инвестиционным прогнозом</b> и сознательно исключены из презентации.</p>
+<div class="mgmt-grid">
+<article class="mgmt-card"><span class="num">≈180 м²</span><b>Площадь — гипотеза</b><small>Требует конкретного помещения и его обследования</small></article>
+<article class="mgmt-card"><span class="num">≈750 ₽</span><b>Чек — гипотеза</b><small>Проверить спросом, ценовым тестом и ассортиментом</small></article>
+<article class="mgmt-card"><span class="num">≤5 млн ₽</span><b>Лимит персонала в месяц</b><small>Плановый предел полной стоимости, не подтверждён сменным графиком</small></article>
+<article class="mgmt-card"><span class="num">≈51 млн ₽</span><b>Черновой масштаб вложений</b><small>Не бюджет и не запрос на выделение средств</small></article>
+</div>
+<div class="mgmt-columns">
+<div><h3>Что уже есть</h3><p class="muted">Концепция кухни и сервиса, предварительное меню, продуктовые калькуляции, гипотезы площади и штата, обзор конкурентного окружения и перечень рисков. Это исходные материалы для проверки, а не договорная или финансовая база.</p></div>
+<div><h3>Что определит экономику</h3><p class="muted">Право действующей компании на освобождение услуг общепита от НДС и структура операций; фактическая аренда, CAPEX с налогами, поток у помещения, конверсия, средний чек, ФОТ по сменам, доступная мощность кухни и оборотный капитал.</p></div>
+</div>
+<p class="mgmt-note"><b>Порядок расчёта:</b> после предварительного согласия руководства разработать помесячную модель на ОСНО минимум в двух налоговых сценариях — с подтверждённым освобождением операций общепита от НДС и без него. Включить налог на прибыль, амортизацию, страховые взносы, входной НДС, сезонность и все инвестиционные платежи. Ни один показатель доходности не предлагается утверждать сейчас.</p>
+</div></section>
 
-  <section class="block mgmt-dark" id="financial-detail" aria-labelledby="financial-detail-h">
-    <div class="wrap">
-      <p class="label">пятилетняя динамика · базовый сценарий</p>
-      <h2 id="financial-detail-h">Рост выручки.<br><em>Умеренная операционная маржа.</em></h2>
-      <div class="fin-charts" aria-label="Графики пятилетней финансовой модели">
-        <article class="fin-chart"><h3>Выручка с НДС</h3><p class="chart-sub">Базовый сценарий · млн ₽ · годы проекта</p><div class="bar-chart">
-          <div class="bar-col"><span class="bar-val">186,8</span><span class="bar" style="height:67.4%"></span><span class="bar-year">Г1</span></div>
-          <div class="bar-col"><span class="bar-val">222,6</span><span class="bar" style="height:80.3%"></span><span class="bar-year">Г2</span></div>
-          <div class="bar-col"><span class="bar-val">239,5</span><span class="bar" style="height:86.4%"></span><span class="bar-year">Г3</span></div>
-          <div class="bar-col"><span class="bar-val">257,7</span><span class="bar" style="height:92.9%"></span><span class="bar-year">Г4</span></div>
-          <div class="bar-col"><span class="bar-val">277,2</span><span class="bar" style="height:100%"></span><span class="bar-year">Г5</span></div>
-        </div></article>
-        <article class="fin-chart"><h3>EBITDA</h3><p class="chart-sub">Базовый сценарий · млн ₽ · годы проекта</p><div class="bar-chart">
-          <div class="bar-col"><span class="bar-val">8,7</span><span class="bar ebitda" style="height:37.2%"></span><span class="bar-year">Г1</span></div>
-          <div class="bar-col"><span class="bar-val">17,7</span><span class="bar ebitda" style="height:75.6%"></span><span class="bar-year">Г2</span></div>
-          <div class="bar-col"><span class="bar-val">19,5</span><span class="bar ebitda" style="height:83.3%"></span><span class="bar-year">Г3</span></div>
-          <div class="bar-col"><span class="bar-val">21,4</span><span class="bar ebitda" style="height:91.5%"></span><span class="bar-year">Г4</span></div>
-          <div class="bar-col"><span class="bar-val">23,4</span><span class="bar ebitda" style="height:100%"></span><span class="bar-year">Г5</span></div>
-        </div></article>
-      </div>
-      <div class="fin-chart" style="margin-top:14px"><h3>Структура затрат второго года</h3><p class="chart-sub">Млн ₽ · выручка без НДС 212,0 млн ₽ · базовый сценарий</p><div class="cost-stack" role="img" aria-label="Продукты и упаковка 81,6 миллиона рублей; фонд оплаты труда 64,6; аренда и эксплуатация 23,6; прочие расходы 24,5"><span style="width:38.5%"></span><span style="width:30.5%"></span><span style="width:11.1%"></span><span style="width:11.6%"></span><span style="width:8.3%"></span></div><div class="cost-legend"><span>Продукты и упаковка — 81,6 млн ₽ (38,5%)</span><span>ФОТ — 64,6 млн ₽ (30,5%)</span><span>Аренда и эксплуатация — 23,6 млн ₽ (11,1%)</span><span>Прочие — 24,5 млн ₽ (11,6%)</span><span>EBITDA — 17,7 млн ₽ (8,4%)</span></div><p class="chart-sub" style="margin-top:14px">EBITDA — 17,7 млн ₽ (8,4% выручки без НДС). Сумма округлённых статей может незначительно отличаться от итогов модели.</p></div>
-      <div class="fin-method"><b>Методика чтения показателей.</b> Выручка в графике приведена с НДС; EBITDA и маржа рассчитаны на выручку без НДС. Графики показывают базовый сценарий, не целевой. Выручка и EBITDA за годы 1–5 взяты из таблицы инвестиционной модели. Финансовая модель не заменяет проверку налоговых и арендных условий.</div>
-    </div>
-  </section>
+  <section class="block mgmt" id="financial-detail" aria-labelledby="financial-detail-h"><div class="wrap">
+<p class="label">контрольные допущения</p><h2 id="financial-detail-h">Что предстоит <em>доказать цифрами</em></h2>
+<div class="mgmt-columns">
+<div><h3>Экономика ресторанной точки</h3><p>Сверить реальные цены и микс продаж, 3–5 минут на выдаче, операционную пропускную способность, график и стоимость персонала. Текущие продуктовые калькуляции — отправная точка, а не итоговый P&amp;L.</p></div>
+<div><h3>Капитал и налоги</h3><p>Получить предварительные условия по площадям, технические данные и смету CAPEX. Оценить расходы по ОСНО в составе действующего юридического лица и влияние НДС на цену и денежный поток.</p></div>
+</div>
+<div class="mgmt-note"><b>Правило инвестиционной дисциплины:</b> не публиковать точные NPV, IRR, EBITDA и срок окупаемости, пока нет единой проверяемой помесячной модели. Сценарии и альтернативные форматы 180 м² / 90 м² будут сопоставлены на этапе предпроектной проработки.</div>
+</div></section>
 
   <section class="block" id="risks" aria-labelledby="risks-h">
     <div class="wrap">
@@ -986,36 +955,28 @@ footer b { color: var(--ink); font-weight: 500; }
     </div>
   </section>
 
-  <section class="block decision" id="decision" aria-labelledby="decision-h">
-    <div class="wrap">
-      <p class="label">следующий шаг</p>
-      <h2 id="decision-h">Решение, которое <em>нужно принять</em></h2>
-      <p class="lead">Предлагается не переходить сразу к полному инвестированию. Сначала подтвердить ключевые предпосылки, от которых зависит доходность проекта.</p>
-      <div class="decision-box">
-        <div>
-          <span class="status">Предлагается согласовать</span>
-          <ul class="decision-list">
-            <li>Проведение полевых замеров и получение данных по трафику у потенциального блока.</li>
-            <li>Переговоры по аренде с целевыми условиями и альтернативными вариантами помещения.</li>
-            <li>Получение технических условий и предварительной сметы инженерии и оборудования.</li>
-            <li>Тестирование меню, цен и скорости выдачи на пилотном ассортименте.</li>
-            <li>Обновление финансовой модели на подтверждённых исходных данных.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Критерии перехода к инвестиционному решению</h3>
-          <ul class="decision-list">
-            <li>Подтверждённый потенциал около 820 чеков в день на зрелом этапе при среднем чеке 750 ₽ — целевое условие входа в модели. Ориентир безубыточности NPV — около 768 чеков в день при прочих базовых допущениях.</li>
-            <li>Подтверждённые арендные и технические условия.</li>
-            <li>Меню из 25–30 позиций проходит тест скорости 3–5 минут и дегустационную оценку.</li>
-            <li>Целевая экономика подтверждается обновлённой моделью и проверенными налоговыми допущениями.</li>
-            <li>Утверждена единая версия меню, цен и техкарт: в исходных материалах есть разные редакции ассортимента.</li>
-          </ul>
-        </div>
-      </div>
-      <p class="mgmt-note">В инвестиционном документе на предварительные исследования, дегустации и юридическую проверку предлагается ограничить расходы диапазоном 0,5–0,8 млн ₽ до прохождения контрольных проверок. Этот лимит также требует отдельного согласования.</p>
-    </div>
-  </section>
+  <section class="block decision" id="decision" aria-labelledby="decision-h"><div class="wrap">
+<p class="label">вопрос на рассмотрение генерального директора и совета директоров</p>
+<h2 id="decision-h">Разрешить проработку.<br><em>Не утверждать инвестиции.</em></h2>
+<p class="lead">Просим принципиально поддержать изучение инициативы «Николаевская» как возможного нового направления действующей компании общественного питания и поручить подготовить материалы для отдельного инвестиционного решения.</p>
+<div class="decision-box">
+<div><span class="status">Предлагается разрешить следующий этап</span><ul class="decision-list">
+<li>Уточнить форматы 180 м² и 90 м² и критерии выбора; предварительно изучить доступные блоки.</li>
+<li>Проверить пассажирский сценарий, целевую аудиторию, спрос и конкурентоспособность цен.</li>
+<li>Оценить допустимую технологию, сменный штат, производственные мощности и ориентир CAPEX.</li>
+<li>Подготовить помесячную финансовую модель на ОСНО, включая разные варианты НДС.</li>
+<li>Рассмотреть семейный сервис и потенциал питания «Сапсанов» / ВСМ как отдельные гипотезы развития.</li>
+</ul></div>
+<div><h3>Что решение не означает</h3><ul class="decision-list">
+<li>Не выделяет бюджет строительства и не подтверждает доходность.</li>
+<li>Не даёт право подписывать аренду, закупки или другие обязательства без отдельного решения.</li>
+<li>Не означает согласования или участия РЖД, оператора вокзала и перевозчиков.</li>
+<li>Не подтверждает контрактов на питание поездов и запуск услуг.</li>
+<li>Не устанавливает обязательную дату открытия.</li>
+</ul></div>
+</div>
+<div class="mgmt-note"><b>Предлагаемый результат следующего этапа:</b> концепт с верифицированными предпосылками; сравнительный анализ форматов; дорожная карта согласований; предварительная смета и независимая проверка рисков; финансовая модель ОСНО; предложение «реализовать / доработать / отказаться». Возможный лимит предпроектных расходов 0,5–0,8 млн ₽ — отдельный предмет согласования, не утверждённый бюджет.</div>
+</div></section>
 
   <section class="block where" id="adres" aria-labelledby="adres-h">
     <div class="wrap">

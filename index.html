@@ -480,6 +480,9 @@ footer b { color: var(--ink); font-weight: 500; }
 
 /* First stage: management decision and evidence labeling */
 .brief-banner{border-block:1px solid #ad8c77;background:#35232c;color:#f8f2eb;padding:30px 0}.brief-banner .brief-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:32px;align-items:center}.brief-banner h2{font-size:clamp(27px,3.7vw,42px);line-height:1.18;margin:9px 0 12px}.brief-banner p{margin:0 0 12px;line-height:1.6}.brief-banner .status{display:inline-block;border:1px solid #bea486;padding:6px 10px;font-size:12px;color:#f6d9bc}.brief-actions{display:flex;gap:12px;flex-wrap:wrap}.brief-actions a{display:inline-block;color:#fff;border:1px solid #ceb49b;padding:11px 15px;text-decoration:none}.evidence-table{width:100%;border-collapse:collapse}.evidence-table th,.evidence-table td{padding:13px;text-align:left;vertical-align:top;border-bottom:1px solid #b69e8b66}.evidence-table th{font-size:13px;letter-spacing:.03em}.evidence-table td{font-size:14px}.brief-card{padding:20px;border:1px solid #bfa78e;background:#ffffff0d}.brief-card li{margin-bottom:10px}.brief-status{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#ead6bd}@media(max-width:720px){.brief-banner .brief-grid{grid-template-columns:1fr}.brief-banner{padding:22px 0}.evidence-table th,.evidence-table td{padding:9px;font-size:12px}}
+
+/* Investor committee alternatives and evidence matrix */
+.format-scroll{overflow-x:auto;max-width:100%;margin:24px 0;overscroll-behavior-x:contain}.format-table{width:100%;min-width:690px;border-collapse:collapse;font-size:14px;line-height:1.52}.format-table td,.format-table th{padding:13px 14px;text-align:left;vertical-align:top;border:1px solid #bdada37d}.format-table thead th{background:#56303c;color:#fff;font-weight:600}.format-table tbody tr:nth-child(even){background:#e9e0d933}.format-table tbody th{min-width:140px;font-weight:650}.format-table td{min-width:145px}.format-table a{color:inherit}@media(max-width:680px){.format-table{font-size:12.5px}.format-table td,.format-table th{padding:10px 11px}}
 </style>
 </head>
 <body>
@@ -488,7 +491,7 @@ footer b { color: var(--ink); font-weight: 500; }
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Николаевская, наверх"><b>Николаевская</b><span>кафе · Ленинградский вокзал</span></a>
     <nav class="nav" aria-label="Разделы">
-      <a href="#brief">Инициатива</a><a href="#menu">Меню</a><a href="#poezd">В поезд</a><a href="#packaging">Упаковка</a><a href="#interier">Интерьер</a><a href="#competition">Рынок</a><a href="#due-diligence">Площадка</a><a href="#economics">Экономика</a><a href="#growth">Перспективы</a>
+      <a href="#brief">Инициатива</a><a href="#menu">Меню</a><a href="#poezd">В поезд</a><a href="#packaging">Упаковка</a><a href="#interier">Интерьер</a><a href="#competition">Рынок</a><a href="#due-diligence">Площадка</a><a href="#formats">Форматы</a><a href="#economics">Экономика</a><a href="#growth">Перспективы</a>
     </nav>
     <a class="top-cta" href="#decision">Для руководства</a>
   </div>
@@ -584,11 +587,12 @@ footer b { color: var(--ink); font-weight: 500; }
 
   <section class="block" id="menu" aria-labelledby="menu-h">
     <div class="wrap">
-      <p class="label">меню</p>
+      <p class="label">концепция меню · не окончательный ассортимент</p>
       <div class="menu-head">
         <h2 id="menu-h">Просто, <em>но <span style="white-space:nowrap">по-ресторанному</span></em></h2>
+        <p class="mgmt-note"><b>Сверка состава:</b> в разделах меню на сайте представлено 32 позиции еды, включая комплексный обед, отдельно 13 напитков и 3 коробки в поезд. Часть позиций может разделять общие заготовки. Для рабочей кухни предстоит выбрать ассортимент, который выдержит заявленную скорость и себестоимость; рекламное меню не равно утверждённым технологическим картам. Все цены — предварительные.</p>
         <div>
-          <p>Простые русские блюда, и в каждом один ресторанный приём: соус морне к треске, демиглас к пожарской, бёр-блан к судаку, голландский к яйцам пашот, портвейн к томлёной говядине, ягоды к сметаннику. Фермерская говядина и птица, северная рыба и ягоды, белые грибы. Кухня без фритюра, любое блюдо можно взять с собой.</p>
+          <p>Простые русские блюда, и в каждом один ресторанный приём: соус морне к треске, демиглас к пожарской, бёр-блан к судаку, голландский к яйцам пашот, портвейн к томлёной говядине, ягоды к сметаннику. Фермерская говядина и птица, северная рыба и ягоды, белые грибы. Концепция предусматривает кухню без фритюра и возможность выдачи блюд навынос; упаковку и срок хранения требуется испытать.</p>
           <div class="legend"><span><svg class="flower" viewBox="0 0 24 24" aria-hidden="true"><g><circle cx="18.20" cy="12.00" r="4.2"/><circle cx="16.38" cy="16.38" r="4.2"/><circle cx="12.00" cy="18.20" r="4.2"/><circle cx="7.62" cy="16.38" r="4.2"/><circle cx="5.80" cy="12.00" r="4.2"/><circle cx="7.62" cy="7.62" r="4.2"/><circle cx="12.00" cy="5.80" r="4.2"/><circle cx="16.38" cy="7.62" r="4.2"/><circle cx="12" cy="12" r="6.6"/></g></svg> фирменное блюдо</span><span class="mono" style="font-size:11.5px">180/50 г — выход порции</span><span class="mono" style="font-size:11.5px">сезон — ноябрь–март</span></div>
         </div>
       </div>
@@ -883,7 +887,7 @@ footer b { color: var(--ink); font-weight: 500; }
       </div>
       <div class="kpi-bar">
         <div class="kpi"><b>90%</b><span>целевой показатель заказов, выданных не позднее 5 минут в пиковый период</span></div>
-        <div class="kpi"><b>25–30</b><span>позиций — ориентир короткого меню в операционной концепции</span></div>
+        <div class="kpi"><b>32</b><span>позиции еды в представленном меню, включая комплексный обед; итоговое операционное меню требует сокращения и тестирования</span></div>
         <div class="kpi"><b>2–3 мин</b><span>плановая доводка горячего на станции выдачи</span></div>
       </div>
       <div class="mgmt-columns">
@@ -893,7 +897,19 @@ footer b { color: var(--ink); font-weight: 500; }
     </div>
   </section>
 
-  <section class="block mgmt-dark" id="economics" aria-labelledby="economics-h">
+  <section class="block mgmt" id="formats" aria-labelledby="formats-h"><div class="wrap">
+<p class="label">альтернативы · решение после проверки</p>
+<h2 id="formats-h">Не один сценарий.<br><em>Три варианта действий.</em></h2>
+<p class="lead">Предлагается оценить несколько конфигураций, прежде чем выбирать площадку и запрашивать инвестиционный бюджет. Сравнение ниже отражает архитектуру решения, а не просчитанные инвестиционные альтернативы.</p>
+<div class="format-scroll"><table class="format-table"><thead><tr><th>Критерий</th><th>Кафе ≈180 м²</th><th>Компактный формат ≈90 м²</th><th>Отказ / перенос запуска</th></tr></thead><tbody>
+<tr><th>Продукт</th><td>Полноценная посадка, кухня, выдача в поезд</td><td>Короткое меню и приоритет выдачи навынос</td><td>Сохранение разработанной концепции без обязательств</td></tr>
+<tr><th>Потенциальное преимущество</th><td>Выше потенциал выручки при достаточном потоке</td><td>Потенциально ниже абсолютные инвестиции и потребность в площади</td><td>Отсутствие инвестиционного риска по неподтверждённой площадке</td></tr>
+<tr><th>Главное ограничение</th><td>Высокая аренда, сложная инженерия и требования к штату</td><td>Меньшая посадка и ограничения технологического процесса</td><td>Упущенная возможность, но сохранение ресурсов компании</td></tr>
+<tr><th>Что проверить</th><td>Инженерия, кухня, трафик, CAPEX, ФОТ, окупаемость на ОСНО</td><td>Разрешённое оборудование, меню, поток, площадь подсобных зон</td><td>Наличие лучших площадок и альтернативных инвестиционных идей</td></tr>
+</tbody></table></div>
+<p class="mgmt-note"><b>Принцип отбора:</b> не выбирать 180 м² только потому, что так устроена первая версия концепции. Решение — по сопоставимым денежным потокам на ОСНО, рискам и требованиям к сервису. При отсутствии приемлемых условий проект должен иметь право на остановку.</p>
+</div></section>
+<section class="block mgmt-dark" id="economics" aria-labelledby="economics-h">
 <div class="wrap">
 <p class="label">финансовая гипотеза · ОСНО</p>
 <h2 id="economics-h">Экономика ещё <em>не подтверждена</em></h2>
@@ -968,12 +984,26 @@ footer b { color: var(--ink); font-weight: 500; }
 <article class="phase"><small>ЭТАП 05</small><b>Реализация — только после одобрения</b><p>Договоры, проектирование, оборудование, найм и запуск — по отдельному решению.</p></article>
 </div>
 <div class="mgmt-columns">
-<div><h3>Штатная гипотеза · 34 человека</h3><p>Управляющий — 1; шеф-повар — 1; су-шефы смен — 4; повара — 10; сборщики и кассиры — 9; мойщики и кухонные работники — 5; уборщики зала — 4.</p><p class="mgmt-note"><b>Полная стоимость персонала:</b> бюджетная цель до 5,0 млн ₽ в месяц при пропорционально скорректированных окладах и расчётных резервах. Не доказано покрытие 18-часового графика, отпусков и пиков без переработок. Требуется сменное моделирование и проверка найма по рынку Москвы.</p></div>
+<div><h3>Штатная гипотеза · 34 человека</h3><p>Управляющий — 1; шеф-повар — 1; су-шефы смен — 4; повара — 10; сборщики и кассиры — 9; мойщики и кухонные работники — 5; уборщики зала — 4.</p><p class="mgmt-note"><b>Полная стоимость персонала:</b> бюджетная цель до 5,0 млн ₽ в месяц при пропорционально скорректированных окладах и расчётных резервах. Режим 05:30–23:30 означает 126 часов работы в неделю. 34 сотрудника × 40 часов дают максимум 1 360 плановых человеко-часов в неделю до отпусков и отсутствий, но их распределение по должностям и сменам не рассчитано. Не доказано покрытие отпусков и пиков без переработок. Требуется сменное моделирование и проверка найма по рынку Москвы.</p></div>
 <div><h3>Показатели для проверки</h3><p>Пассажирский поток непосредственно у блока, конверсия в чек, средний чек, продуктовая себестоимость, загрузка кухни, ожидание выдачи, аренда к выручке, ФОТ к выручке и потенциальный срок окупаемости после полного пересчёта.</p></div>
 </div>
 </div></section>
 
-  <section class="block decision" id="decision" aria-labelledby="decision-h"><div class="wrap">
+  <section class="block" id="evidence-plan" aria-labelledby="evidence-plan-h"><div class="wrap">
+<p class="label">результат первого согласования</p>
+<h2 id="evidence-plan-h">Что руководство получит <em>после проработки</em></h2>
+<p class="lead">После разрешения на работу — пакет материалов, позволяющий принять отдельное инвестиционное решение. Ответственные ниже обозначены по функциям, назначение конкретных сотрудников не предполагается.</p>
+<div class="format-scroll"><table class="format-table"><thead><tr><th>Блок работы</th><th>Проверяемый результат</th><th>Предполагаемый ответственный</th><th>Критерий завершения</th></tr></thead><tbody>
+<tr><td>Коммерческая гипотеза</td><td>Замеры потока у кандидатов на блок, конверсия, цены и конкурентное сравнение</td><td>Коммерческая функция</td><td>Есть наблюдения и диапазон спроса, а не только общий поток вокзала</td></tr>
+<tr><td>Площадка и инженерия</td><td>Планы, ограничения помещения, технические мощности, проект аренды и смета</td><td>Техническая / юридическая функции</td><td>Есть реализуемый вариант размещения с перечнем условий</td></tr>
+<tr><td>Продукт и производство</td><td>Сокращённое меню, техкарты, скорость выдачи, санитарная схема, упаковка</td><td>Операционная функция и шеф</td><td>Подтверждена скорость, себестоимость, качество и безопасность</td></tr>
+<tr><td>Персонал</td><td>Посменная модель 34 сотрудников, тарифы и расчёт полной стоимости</td><td>Операционная функция / HR / финансы</td><td>Закрываются 126 часов работы в неделю без неучтённых переработок</td></tr>
+<tr><td>Налоги и финансы</td><td>Помесячная модель на ОСНО, варианты НДС, CAPEX, оборотный капитал, риски</td><td>Финансовая / налоговая функция</td><td>Воспроизводимые NPV, IRR и пороги отказа от проекта</td></tr>
+<tr><td>Отдельные возможности</td><td>Оценка подарков детям и направления питания «Сапсан» / ВСМ</td><td>Коммерческая функция</td><td>Есть план исследования, нет обещаний неподтверждённых договоров</td></tr>
+</tbody></table></div>
+<p class="mgmt-note"><b>Результат:</b> рекомендация «реализовать / изменить формат / отложить / отказаться», с указанием источников данных и границ точности. Контакты с оператором вокзала и потенциальными партнёрами проводятся только после внутреннего разрешения в согласованном порядке.</p>
+</div></section>
+<section class="block decision" id="decision" aria-labelledby="decision-h"><div class="wrap">
 <p class="label">вопрос на рассмотрение генерального директора и совета директоров</p>
 <h2 id="decision-h">Разрешить проработку.<br><em>Не утверждать инвестиции.</em></h2>
 <p class="lead">Просим принципиально поддержать изучение инициативы «Николаевская» как возможного нового направления действующей компании общественного питания и поручить подготовить материалы для отдельного инвестиционного решения.</p>
